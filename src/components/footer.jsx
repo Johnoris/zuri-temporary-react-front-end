@@ -1,8 +1,8 @@
 const Footer = () => {
     return(
         <footer>
-            <div class="contents">
-                <div class="quick-links">
+            <div className="contents">
+                <div className="quick-links">
                     <a href="#">Home</a>
                     <a href="#">Terms of Use</a>
                     <a href="#">Contact Us</a>

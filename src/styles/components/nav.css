@@ -29,3 +29,8 @@ nav div .get-started{
     margin-right: 0;
     font-weight: 700;
 }
+@media (max-width: 850px) {
+    .navbar{
+        display: none;
+    }
+}

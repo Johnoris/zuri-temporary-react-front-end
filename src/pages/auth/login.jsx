@@ -53,13 +53,14 @@ const Login = () => {
                   </label>
                 </div>
                 <div className="password-fa-eye">
-                <div className="w-100">
-                  <input
-                    type="text"
-                    name="fullname"
-                    className="fullname"
-                    placeholder="Enter full name"
-                  />
+                  <div className="w-100">
+                    <input
+                      type="text"
+                      name="fullname"
+                      className="fullname"
+                      placeholder="Enter full name"
+                    />
+                  </div>
                 </div>
                 <div>
                   <p className="error"></p>
@@ -111,44 +112,13 @@ const Login = () => {
                 </div>
                 <div>
                   <p className="error2"></p>
-
+                </div>
                 <div  className=" w-100">
                   <a href={require("../auth/forgotPassword")} className="forgot-password no-break">
                     Forgot Password?
                   </a>
                 </div>
               </div>
-            </div>
-
-            <div className="rmfp">
-              <div className="remember-me">
-                <div>
-                  <input
-                    type="checkbox"
-                    name="remember me"
-                    className="remember"
-                    value="remember-me"
-                  />
-                </div>
-                <div>
-                  <label for="remember-me" className="rememberMe-text">
-                    Remember Me
-                  </label>
-                </div>
-              </div>
-
-              <div>
-                <a
-                  href={require("../auth/forgotPassword")}
-                  className="forgot-password"
-                >
-                  Forgot Password?
-                </a>
-              </div>
-            </div>
-
-            <div className="login-button">
-              <a href="#">Login</a>
             </div>
           </form>
 

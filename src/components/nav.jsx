@@ -4,13 +4,13 @@ const Nav = () => {
     return(
         <nav>
             <span><img src={require('../assets/images/favicon.png')} alt="thirtin logo" /> </span>
-            <div class="navbar">
+            <div className="navbar">
                 <Link to="/">Home</Link>
                 <Link to="/templates">Template</Link>
                 <Link to="/about">About 13</Link>
-                <Link to="/help" class="help">Help <i class="fa fa-angle-down"></i></Link>
+                <Link to="/help" className="help">Help <i className="fa fa-angle-down"></i></Link>
                 <Link to="/login">Login</Link>
-                <Link to="/get-started" class="get-started">Get Started</Link>
+                <Link to="/get-started" className="get-started">Get Started</Link>
             </div>
         </nav>
     )
