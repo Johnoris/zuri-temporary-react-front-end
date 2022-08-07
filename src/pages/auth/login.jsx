@@ -2,7 +2,8 @@ const Login = () => {
   return (
     <div className="login-page d-flex">
       <div className="login-sidebar">
-        <img src={require("../../assets/images/Logo.png")} alt=""/>
+        <img className="thirtin-logo" src={require("../../assets/images/Logo.png")} alt=""/>
+        <img className="coloured-thirtin-logo" src={require("../../assets/images/favicon.png")} alt=""/>
       </div>
       <main>
           <div className="login-box">
@@ -17,7 +18,7 @@ const Login = () => {
                     Full name
                   </label>
                 </div>
-                <div>
+                <div className="w-100">
                   <input
                     type="text"
                     name="fullname"
@@ -41,7 +42,7 @@ const Login = () => {
                     </label>
                   </div>
                   <div className="password-fa-eye">
-                    <div>
+                    <div className=" w-100">
                       <input
                         type="password"
                         name="confirmPassword"
@@ -76,8 +77,8 @@ const Login = () => {
                   </div>
                 </div>
 
-                <div>
-                  <a href={require("../auth/forgotPassword")} className="forgot-password">
+                <div  className=" w-100">
+                  <a href={require("../auth/forgotPassword")} className="forgot-password no-break">
                     Forgot Password?
                   </a>
                 </div>
