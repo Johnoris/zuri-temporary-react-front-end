@@ -6,11 +6,11 @@
   box-sizing: border-box;
   max-width: 100%;
 }
-.d-flex{
+.d-flex {
   display: flex;
   gap: 27px;
 }
-.login-sidebar{
+.login-sidebar {
   background: url("../../../assets/images/273_Pink_Halftone_BG_2.png");
   background-repeat: no-repeat;
   width: 402px;
@@ -18,7 +18,7 @@
   justify-content: center;
   padding-top: 133px;
 }
-.login-sidebar img{
+.login-sidebar img {
   max-width: 226.67px;
   max-height: 329.97px;
 }
@@ -111,8 +111,8 @@
   order: 1;
   flex-grow: 0;
 }
-.login-page input{
-  border: 1px solid #A3A3A3;
+.login-page input {
+  border: 1px solid #a3a3a3;
 }
 .login-page .fullname-text {
   /* Body Text/Body Text-Regular */
@@ -415,7 +415,7 @@
   flex: none;
   order: 2;
   flex-grow: 0;
-} 
+}
 .login-page .google {
   display: flex;
   flex-direction: row;
@@ -438,6 +438,7 @@
   flex-grow: 0;
   z-index: 0;
 }
+
 .google-image {
   width: 30px;
   height: 30px;
@@ -480,6 +481,11 @@
   text-decoration: none;
   text-align: center;
 }
+
+.login-page .google-wrapper {
+  width: 91%;
+}
+
 .login-page .linkedin {
   display: flex;
   flex-direction: row;
@@ -543,12 +549,12 @@
   text-decoration: none;
   text-align: center;
 }
-.login-page .error{
+.login-page .error {
   color: red;
   font-style: italic;
   font-size: small;
 }
-.login-page .error2{
+.login-page .error2 {
   color: red;
   font-style: italic;
   font-size: small;
@@ -614,7 +620,7 @@
     padding: 0px 24px;
     margin: 1.5rem auto;
     width: 78%;
-  } 
+  }
 }
 @media (max-width: 574px) {
   .login-page .login-screen {
@@ -625,7 +631,7 @@
     padding: 0px 24px;
     margin: 1.5rem auto;
     width: 89.5%;
-  } 
+  }
 }
 @media (max-width: 500px) {
   .login-page .login-screen {
@@ -647,7 +653,7 @@
     padding: 0px 0px;
     margin: 1.5rem auto;
     width: 100%;
-  } 
+  }
 }
 @media (max-width: 350px) {
   .login-page .login-screen {
