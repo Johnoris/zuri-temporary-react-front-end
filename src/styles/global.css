@@ -2,6 +2,8 @@
 @import url('./pages/auth/forgotpassword.css');
 @import url('./pages/auth/signup.css');
 @import url('./pages/auth/passsword-reset-page.css');
+@import url('./pages/auth/AccountVerify.css');
+@import url('./pages/auth/VerifySuccess.css');
 @import url('./pages/auth/login.css');
 @import url('./pages/auth/password-reset-code.css');
 

@@ -49,7 +49,7 @@ const LandingPage = () => {
                 </div>
 
 
-                <div className="reach-the-world">
+                <div className="reach-the-world" id="scroll">
                     <div className="reach-the-world-texts">
                         <div>
                             <h1>REACH FOR THE WORLD<br/>

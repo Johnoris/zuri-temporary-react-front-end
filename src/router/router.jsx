@@ -7,12 +7,16 @@ import SignUp from "../pages/auth/signUp";
 import Login from "../pages/auth/login";
 import PasswordResetCode from "../pages/auth/passwordresetcode";
 import LandingPage from "../pages/main/landingpage";
-import LoginPage from "../pages/auth/loginpage";
+import AccountVerify from "../pages/auth/accountverify";
+import VerifySuccess from "../pages/auth/verifysuccess";
+
 const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LandingPage />} />
+        <Route path="/account-verify" element={<AccountVerify/>}/>
+        <Route path="/verify-success" element={<VerifySuccess/>}/>
         <Route path="/forgot-password" element={<ForgotPassword/>} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/password-reset-page" element={<PasswordResetPage />} />
@@ -20,7 +24,6 @@ const Router = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/password-reset-code" element={<PasswordResetCode />} />
         <Route path="/landingpage" element={<LandingPage />} />
-        <Route path="/loginpage" element={<LoginPage />} />
       </Routes>
     </BrowserRouter>
   );

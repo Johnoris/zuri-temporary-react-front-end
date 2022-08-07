@@ -4,7 +4,8 @@ const PasswordResetPage = () => {
     return(
         <div className="password-reset-page-wrapper">
             <div className="forgot-password-sidebar">
-                <img src={require("../../assets/images/Logo.png")} alt=""/>
+                <img src={require("../../assets/images/Logo.png")} alt="" className="thirtin-logo"/>
+                <img src={require("../../assets/images/favicon.png")} alt="" className="coloured-thirtin-logo"/>
             </div>
             <div className="mg-auto">
                 <div className='password-reset-page-form-wrapper'>

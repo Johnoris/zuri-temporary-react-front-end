@@ -34,3 +34,4 @@ nav div .get-started{
         display: none;
     }
 }
+html { scroll-behavior: smooth; } 

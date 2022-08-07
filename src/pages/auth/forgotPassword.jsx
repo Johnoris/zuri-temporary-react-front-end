@@ -3,7 +3,8 @@ const ForgotPassword = () => {
     return(
         <div className="forgot-password-wrapper">
             <div className="forgot-password-sidebar">
-                <img src={require("../../assets/images/Logo.png")} alt=""/>
+                <img src={require("../../assets/images/Logo.png")} alt="" className="thirtin-logo"/>
+                <img src={require("../../assets/images/favicon.png")} alt="" className="coloured-thirtin-logo"/>
             </div>
             <main >
                 <div className="forgot-password-parent">

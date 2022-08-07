@@ -2,7 +2,8 @@ const PasswordResetCode = () => {
   return(
     <div class="password-reset-code">
       <div class="vector">
-        <img src={require('../../assets/images/Property 1=Variant2.png')} alt="logoo"/>
+          <img src={require("../../assets/images/Logo.png")} alt="" className="thirtin-logo"/>
+          <img src={require("../../assets/images/favicon.png")} alt="" className="coloured-thirtin-logo"/>
       </div>
       <div class="container">
         <img src={require('../../assets/images/amico.png')} alt="Enter OTP"/>

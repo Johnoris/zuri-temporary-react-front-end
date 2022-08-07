@@ -14,7 +14,8 @@ const SignUp = () => {
     <div>
       <main className="sign-up-wrapper">
         <div className="sign-up-icon">
-          <img src={require("../../assets/images/Logo-white.png")} alt="" />
+          <img src={require("../../assets/images/Logo.png")} alt="" className="thirtin-logo"/>
+          <img src={require("../../assets/images/favicon.png")} alt="" className="coloured-thirtin-logo"/>
         </div>
         <div className="sign-up-form">
           <h3>Sign Up</h3>

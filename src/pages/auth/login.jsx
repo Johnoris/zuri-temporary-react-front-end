@@ -1,5 +1,6 @@
 import GoogleLogin from "react-google-login";
 import { Link } from "react-router-dom";
+import Password from "../../components/password";
 
 const Login = () => {
   const handleGoogleLogin = () => {
@@ -23,104 +24,54 @@ const Login = () => {
           </div>
 
           <form action="" className="myForm">
-            <div className="firstname-field">
-              <div>
-                <label for="fullname" className="fullname-text">
-                  Full name
-                </label>
-              </div>
-              <div>
-                <input
-                  type="text"
-                  name="fullname"
-                  className="fullname"
-                  placeholder="Enter full name"
-                />
-              </div>
-              <div>
-                <p className="error"></p>
-              </div>
-            </div>
+                                <div className="firstname-field">
+                                    <div>
+                                        <label for="fullname" className="fullname-text">Full name</label>
+                                    </div>
+                                    <div className="w-100">
+                                        <input type="text" name="fullname" className="fullname" placeholder="Enter full name"/>
+                                    </div>
+                                    <div>
+                                        <p className="error"></p>
+                                    </div>
+                                </div>
 
-            <div className="frame22">
-              <div className="confirm-password-field">
-                <div>
-                  <label
-                    for="confirm-password"
-                    className="confirmPassword-text"
-                  >
-                    Enter Password
-                  </label>
-                </div>
-                <div className="password-fa-eye">
-                  <div className="w-100">
-                    <input
-                      type="text"
-                      name="fullname"
-                      className="fullname"
-                      placeholder="Enter full name"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <p className="error"></p>
-                </div>
-              </div>
+                                <div className="frame22">
+                                    <div className="confirm-password-field">
+                                        <div>
+                                            <label for="confirm-password" className="confirmPassword-text">
+                                                Confirm Password</label>
+                                        </div>
+                                        <Password/>
+                                        <div>
+                                            <p className="error2"></p>
+                                        </div>
+                                    </div>
+                                </div>
 
-              <div className="frame22">
-                <div className="confirm-password-field">
-                  <div>
-                    <label
-                      for="confirm-password"
-                      className="confirmPassword-text"
-                    >
-                      Enter Password
-                    </label>
-                  </div>
-                  <div className="password-fa-eye">
-                    <div className=" w-100">
-                      <input
-                        type="password"
-                        name="confirmPassword"
-                        className="password"
-                        placeholder="Enter Password"
-                      />
-                    </div>
-                    <div>
-                      <i className="far fa-eye" id="showPassword"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <p className="error2"></p>
-                  </div>
-                </div>
-              </div>
 
-              <div className="rmfp">
-                <div className="remember-me">
-                  <div>
-                    <input
-                      type="password"
-                      name="confirmPassword"
-                      className="password"
-                      placeholder="Enter Password"
-                    />
-                  </div>
-                  <div>
-                    <i className="far fa-eye" id="showPassword"></i>
-                  </div>
-                </div>
-                <div>
-                  <p className="error2"></p>
-                </div>
-                <div  className=" w-100">
-                  <a href={require("../auth/forgotPassword")} className="forgot-password no-break">
-                    Forgot Password?
-                  </a>
-                </div>
-              </div>
-            </div>
-          </form>
+                                <div className="rmfp">
+
+                                    <div className="remember-me">
+                                        <div>
+                                            <input type="checkbox" name="remember me" className="remember" value="remember-me"/>
+                                        </div>
+                                        <div>
+                                            <label for="remember-me" className="rememberMe-text">Remember Me</label>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <a href="forgetpassword.html" className="forgot-password no-break">Forgot Password?</a>
+                                    </div>
+                                </div>
+
+
+                                <div className="login-button">
+                                    <a href="#">Login</a>
+                                </div>
+                            </form>
+
 
           <div className="sign-up">
             <p>

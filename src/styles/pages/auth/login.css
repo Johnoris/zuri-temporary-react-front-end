@@ -215,21 +215,7 @@
   width: 100%;
   position: relative;
 }
-.login-page .password {
-  box-sizing: border-box;
-  /* Auto layout */
-  padding: 12px;
-  width: 35rem;
-  background: #ffffff;
-  /* Tertiary color/800 */
-  border: 1px solid #a3a3a3;
-  border-radius: 4px;
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
-}
+
 .login-page .fa-eye {
   color: #cccccc;
   cursor: pointer;
@@ -406,10 +392,7 @@
   place-items: center;
   padding: 0px;
   gap: 48px;
-  isolation: isolate;
-  padding: 0px 26px;
   margin: 1.5rem auto;
-  width: 54%;
   /* Inside auto layout */
 
   flex: none;
@@ -481,9 +464,12 @@
   text-decoration: none;
   text-align: center;
 }
-
+.w-100{
+  width: 100%;
+}
 .login-page .google-wrapper {
-  width: 91%;
+  width: 489px;
+  height: 64px;
 }
 
 .login-page .linkedin {
@@ -628,7 +614,6 @@
     width: 80%;
   }
   .login-page .google-and-linkedin {
-    padding: 0px 24px;
     margin: 1.5rem auto;
     width: 89.5%;
   }
@@ -651,7 +636,6 @@
   }
   .login-page .google-and-linkedin {
     padding: 0px 0px;
-    margin: 1.5rem auto;
     width: 100%;
   }
 }
