@@ -1,9 +1,13 @@
+/* auth pages */
 @import url('./pages/auth/forgotpassword.css');
 @import url('./pages/auth/signup.css');
 @import url('./pages/auth/passsword-reset-page.css');
-@import url('./pages/main/contact-us.css');
 @import url('./pages/auth/login.css');
 @import url('./pages/auth/password-reset-code.css');
+
+/* main pages */
+@import url('./pages/main/contact-us.css');
+@import url('./pages/main/landingpage.css');
 
 /* components */
 @import url('./components/nav.css');
