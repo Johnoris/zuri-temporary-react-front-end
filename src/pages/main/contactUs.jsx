@@ -16,15 +16,15 @@ const ContactUs = () => {
                     <input type="text" id="fullName" placeholder="Enter full name" />
                 </div>
                 <div class="input-box">
-                    <label for="fullName">Full name</label> <br />
+                    <label for="fullName">Email Address</label> <br />
                     <input type="text" id="fullName" placeholder="Enter full name" />
                 </div>
                 <div class="input-box">
-                    <label for="fullName">Full name</label> <br />
+                    <label for="fullName">Contact</label> <br />
                     <input type="text" id="fullName" placeholder="Enter full name" />
                 </div>
                 <div class="input-box">
-                    <label for="fullName">Full name</label> <br />
+                    <label for="fullName">Subject Matter</label> <br />
                     <input type="text" id="fullName" placeholder="Enter full name" />
                 </div>
                 <div class="input-box">
