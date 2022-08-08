@@ -16,7 +16,7 @@ body {
   height: 80%;
   width: 100%;
   position: absolute;
-  background-size: contain;
+  background-size: cover;
   bottom: 0px;
   display: flex;
   flex-direction: column;
@@ -506,8 +506,11 @@ body {
 }
 }
 @media (max-width: 844px) {
-  .startWebsite-text{
-    margin-top: 1rem;
+  .start-website {
+    background-size: contain;
+  }
+  .startWebsite-text {
+    margin-top: 4rem;
   }
   .startWebsite-text h1{
     font-size: 17px;
@@ -521,7 +524,32 @@ body {
     margin-top: 27rem;
   }
 }
+@media (max-width: 602px) {
+  .startWebsite-text {
+    margin-top: 2rem;
+  }
+  .start-building {
+    margin-top: 1.5rem;
+}
+}
 @media (max-width: 500px) {
+  .startWebsite-text {
+    margin-top: 1rem;
+  }
+  .start-building {
+    margin-top: 1rem;
+}
+  .first-template-row,
+.second-template-row {
+  display: flex;
+  flex-direction: column;
+}
+.first-card,
+.second-card,
+.fourth-card,
+.fifth-card {
+  margin-bottom: 3rem;
+}
   .reach-the-world{
     display: flex;
   flex-direction: column;
