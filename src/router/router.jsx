@@ -9,12 +9,17 @@ import PasswordResetCode from "../pages/auth/passwordresetcode";
 import LandingPage from "../pages/main/landingpage";
 import AccountVerify from "../pages/auth/accountverify";
 import VerifySuccess from "../pages/auth/verifysuccess";
+import Template from "../pages/main/template";
 
 const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
+        {/* main */}
         <Route path="/" element={<LandingPage />} />
+        <Route path="/landingpage" element={<LandingPage />} />
+        <Route path="/templates" element={<Template />} />
+        {/* auth */}
         <Route path="/account-verify" element={<AccountVerify/>}/>
         <Route path="/verify-success" element={<VerifySuccess/>}/>
         <Route path="/forgot-password" element={<ForgotPassword/>} />
@@ -23,7 +28,7 @@ const Router = () => {
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/login" element={<Login />} />
         <Route path="/password-reset-code" element={<PasswordResetCode />} />
-        <Route path="/landingpage" element={<LandingPage />} />
+
       </Routes>
     </BrowserRouter>
   );

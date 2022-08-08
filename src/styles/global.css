@@ -10,11 +10,14 @@
 /* main pages */
 @import url('./pages/main/contact-us.css');
 @import url('./pages/main/landingpage.css');
+@import url('./pages/main/template.css');
 
 /* components */
 @import url('./components/nav.css');
 @import url(./components/footer.css);
 @import url('./components/password.css');
+@import url('./components/templatecard.css');
+@import url('./components/needhelp.css');
 
 /* font-styles */
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');

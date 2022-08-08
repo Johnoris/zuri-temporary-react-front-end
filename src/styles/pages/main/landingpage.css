@@ -384,111 +384,12 @@ body {
 }
 .display-templates {
   display: flex;
-  flex-direction: column;
-  padding: 0px;
+  justify-content: center;
   gap: 96px;
   padding: 20px;
   margin: 0 auto;
   width: 93%;
-  flex: none;
   flex-wrap: wrap;
-  order: 1;
-  flex-grow: 0;
-}
-.first-template-row {
-  margin-top: 2rem;
-  
-}
-.first-template-row,
-.second-template-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0px;
-  gap: 24px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-.first-card,
-.second-card,
-.third-card,
-.fourth-card,
-.fifth-card,
-.sixth-card {
-  text-align: center;
-  padding: 0px;
-  background: #ffffff;
-  box-shadow: 0px 20px 50px rgba(226, 0, 136, 0.2);
-  border-radius: 8px;
-}
-.profile-card {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 40px;
-  text-decoration: none;
-  color: #313131;
-  text-align: center;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-.help-desk {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-image: url("../../../assets/images/273_Pink_Halftone_BG.png");
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  padding: 0px;
-  margin: 6rem auto;
-  width: 90%;
-  border-radius: 10px;
-}
-.message {
-  padding: 10px 30px;
-  width: 100%;
-  margin-bottom: 5rem;
-
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  border-radius: 4px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-.help-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px;
-  gap: 34px;
-  margin-top: 2rem;
-}
-.help-text h1 {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 38px;
-  margin-top: 4rem;
-
-  text-align: center;
-  color: #ffffff;
-}
-.message-field {
-  display: flex;
-}
-.message-field img {
-  position: relative;
-  margin-top: 0.3rem;
-  width: 3.5rem;
-  height: 2rem;
-  margin-left: -2rem;
 }
 @media  (max-width: 1100px){
   .reach-the-world-texts h1 {
@@ -595,17 +496,6 @@ body {
   }
   .start-building {
     margin-top: 1rem;
-}
-  .first-template-row,
-.second-template-row {
-  display: flex;
-  flex-direction: column;
-}
-.first-card,
-.second-card,
-.fourth-card,
-.fifth-card {
-  margin-bottom: 3rem;
 }
   .reach-the-world{
     display: flex;

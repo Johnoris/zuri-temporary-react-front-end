@@ -1,5 +1,7 @@
 import Footer from "../../components/footer"
 import Nav from "../../components/nav"
+import NeedHelp from "../../components/needhelp"
+import TemplateCard from "../../components/templateCard"
 
 const LandingPage = () => {
     return (
@@ -134,101 +136,14 @@ const LandingPage = () => {
 
                 </div>
                 <div className="display-templates">
-
-                    <div className="first-template-row">
-                        <div className="first-card">
-                            <div>
-                                <img src={
-                                        require("../../assets/images/profile-card.png")
-                                    }
-                                    alt="images"/></div>
-                            <div>
-                                <a href="#" className="profile-card">Profile Card Template</a>
-                            </div>
-                        </div>
-
-
-                        <div className="second-card">
-                            <div>
-                                <img src={
-                                        require("../../assets/images/portfolio.png")
-                                    }
-                                    alt="images"/></div>
-                            <div>
-                                <a href="#" className="profile-card">Portfolio Website Template</a>
-                            </div>
-                        </div>
-
-
-                        <div className="third-card">
-                            <div>
-                                <img src={
-                                        require("../../assets/images/business-website.png")
-                                    }
-                                    alt="images"/></div>
-                            <div>
-                                <a href="#" className="profile-card">Business Website Template</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div className="second-template-row">
-                        <div className="fourth-card">
-                            <div>
-                                <img src={
-                                        require("../../assets/images/business-website.png")
-                                    }
-                                    alt="images"/></div>
-                            <div>
-                                <a href="#" className="profile-card">Portfolio Website Template</a>
-                            </div>
-                        </div>
-
-
-                        <div className="fifth-card">
-                            <div>
-                                <img src={
-                                        require("../../assets/images/business-website.png")
-                                    }
-                                    alt="images"/></div>
-                            <div>
-                                <a href="#" className="profile-card">Business Website Template</a>
-                            </div>
-                        </div>
-
-                        <div className="sixth-card">
-                            <div>
-                                <img src={
-                                        require("../../assets/images/profile-card.png")
-                                    }
-                                    alt="images"/></div>
-                            <div>
-                                <a href="#" className="profile-card">Profile Card Template</a>
-                            </div>
-                        </div>
-                    </div>
+                        <TemplateCard href="#" text="Profile Card Template" src={require("../../assets/images/profile-card.png")}/>
+                        <TemplateCard href="#" text="Portfolio Website Template" src={require("../../assets/images/portfolio.png")}/>
+                        <TemplateCard href="#" text="Business Website Template" src={require("../../assets/images/business-website.png")}/>
+                        <TemplateCard href="#" text="Portfolio Website Template" src={require("../../assets/images/business-website.png")}/>
+                        <TemplateCard href="#" text="Business Website Template" src={require("../../assets/images/business-website.png")}/>
+                        <TemplateCard href="#" text="Profile Card Template" src={require("../../assets/images/profile-card.png")}/>
                 </div>
-
-
-                <div className="help-desk">
-                    <div className="help-text">
-                        <div>
-                            <h1>What help do you need With your website?</h1>
-                        </div>
-                        <div className="message-field">
-                            <div>
-                                <input type="text" className="message" placeholder="Send us a message"/></div>
-                            <div>
-                                <a href="#">
-                                    <img src={
-                                            require("../../assets/images/send.png")
-                                        }
-                                        alt=""/></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <NeedHelp/>
                 <Footer/>
             </main>
         </div>
