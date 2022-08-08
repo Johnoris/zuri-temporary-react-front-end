@@ -14,4 +14,7 @@
 /* components */
 @import url('./components/nav.css');
 @import url(./components/footer.css);
-@import url('./components/password.css')
+@import url('./components/password.css');
+
+/* font-styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');

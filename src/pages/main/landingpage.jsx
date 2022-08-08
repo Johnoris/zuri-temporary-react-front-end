@@ -12,13 +12,11 @@ const LandingPage = () => {
                             <h1>CREATE YOUR WEBSITE WITH EASE</h1>
                         </div>
                         <div>
-                            <p>Discover the platform that gives you the freedom to create, design, manage and
-                                <br/>
-                                develop your web presence exactly the way you want</p>
+                            <p>Discover the platform that gives you the freedom to create, design, manage and develop your web presence exactly the way you want</p>
                         </div>
                     </div>
 
-                    <div>
+                    <div className="justify-center">
                         <div className="start-building">
                             <a href="#">Start building your website now</a>
                         </div>
@@ -52,10 +50,7 @@ const LandingPage = () => {
                 <div className="reach-the-world" id="scroll">
                     <div className="reach-the-world-texts">
                         <div>
-                            <h1>REACH FOR THE WORLD<br/>
-                                WITH YOUR DIGITAL
-                                <br/>
-                                PRESENCE</h1>
+                            <h1>REACH FOR THE WORLD WITH YOUR DIGITAL PRESENCE</h1>
                         </div>
                         <div>
                             <p>Our platform allows you to customize our carefully selected templates to suite your business and organizational goals.</p>
@@ -73,9 +68,7 @@ const LandingPage = () => {
 
                 <div className="design-without-stress">
                     <div className="container1">
-                        <h3>Design your website with zero
-                            <br/>
-                            stress using THIRTIN</h3>
+                        <h3>Design your website with zero stress using THIRTIN</h3>
                     </div>
 
                     <div className="container2">
@@ -129,9 +122,7 @@ const LandingPage = () => {
                                 <h2 className="start-building-h2">START BUILDING FROM HERE</h2>
                             </div>
                             <div>
-                                <p className="start-building-p">Choose from our customizable templates. create your niche with
-                                    <br/>
-                                    just a click.</p>
+                                <p className="start-building-p">Choose from our customizable templates. create your niche with <br/>just a click.</p>
                             </div>
                         </div>
                         <div>
