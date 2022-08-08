@@ -10,6 +10,9 @@ import LandingPage from "../pages/main/landingpage";
 import AccountVerify from "../pages/auth/accountverify";
 import VerifySuccess from "../pages/auth/verifysuccess";
 import Template from "../pages/main/template";
+import Dashboard from "../pages/main/dashboard";
+import DesignPage from "../pages/main/designspage";
+import PortfolioTemplate from "../components/Templates/portfolioTemplate";
 
 const Router = () => {
   return (
@@ -19,6 +22,9 @@ const Router = () => {
         <Route path="/" element={<LandingPage />} />
         <Route path="/landingpage" element={<LandingPage />} />
         <Route path="/templates" element={<Template />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/design" element={<DesignPage/>}/>
+        <Route path="/dashboard/templates" element={<PortfolioTemplate/>} />
         {/* auth */}
         <Route path="/account-verify" element={<AccountVerify/>}/>
         <Route path="/verify-success" element={<VerifySuccess/>}/>

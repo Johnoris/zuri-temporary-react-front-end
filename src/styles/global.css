@@ -11,6 +11,8 @@
 @import url('./pages/main/contact-us.css');
 @import url('./pages/main/landingpage.css');
 @import url('./pages/main/template.css');
+@import url('./pages/main/dashboard.css');
+@import url('./pages/main/designpage.css');
 
 /* components */
 @import url('./components/nav.css');
@@ -18,6 +20,9 @@
 @import url('./components/password.css');
 @import url('./components/templatecard.css');
 @import url('./components/needhelp.css');
+@import url('./components/dashboard-bar.css');
+@import url('./components/templates/portfoliotemplate.css');
+@import url('./components/templates/temlate-nav.css');
 
 /* font-styles */
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
