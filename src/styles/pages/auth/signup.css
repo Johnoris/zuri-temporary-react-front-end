@@ -131,6 +131,12 @@
   border: none;
   margin: 32px 0;
   color: #ffffff;
+  cursor: pointer;
+}
+
+.sign-up-wrapper button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }
 
 .sign-up-wrapper .google-wrapper {
