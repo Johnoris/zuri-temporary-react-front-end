@@ -1,7 +1,19 @@
+import { useState } from "react";
 import GoogleLogin from "react-google-login";
 import { Link } from "react-router-dom";
 
+import axios from "../../axios";
+const postData = async (data) => {
+  const response = await axios.post("/posts", data);
+  console.log(response);
+};
+
 const SignUp = () => {
+  const [fullname, setFullname] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+
   const handleGoogleLogin = (googleData) => {
     console.log(googleData);
   };
@@ -10,12 +22,30 @@ const SignUp = () => {
     console.log(result);
   };
 
+  const handleSignUp = (e) => {
+    e.preventDefault();
+    const data = { title: fullname, body: email, userId: 1 };
+    postData(data);
+    setEmail("");
+    setFullname("");
+    setPassword("");
+    setConfirmPassword("");
+  };
+
   return (
     <div>
       <main className="sign-up-wrapper">
         <div className="sign-up-icon">
-          <img src={require("../../assets/images/Logo.png")} alt="" className="thirtin-logo"/>
-          <img src={require("../../assets/images/favicon.png")} alt="" className="coloured-thirtin-logo"/>
+          <img
+            src={require("../../assets/images/Logo.png")}
+            alt=""
+            className="thirtin-logo"
+          />
+          <img
+            src={require("../../assets/images/favicon.png")}
+            alt=""
+            className="coloured-thirtin-logo"
+          />
         </div>
         <div className="sign-up-form">
           <h3>Sign Up</h3>
@@ -23,6 +53,8 @@ const SignUp = () => {
             <div className="w-100 align-center">
               <p>Full name</p>
               <input
+                onChange={(e) => setFullname(e.target.value)}
+                value={fullname}
                 className="input-1"
                 type="text"
                 placeholder="Enter full name"
@@ -31,6 +63,8 @@ const SignUp = () => {
             <div className="w-100 align-center">
               <p>Email</p>
               <input
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="input-1"
                 type="email"
                 placeholder="Enter email address"
@@ -39,7 +73,12 @@ const SignUp = () => {
             <div className="w-100 align-center">
               <p>Password</p>
               <div className="input">
-                <input type="password" placeholder="Enter Password" />
+                <input
+                  onChange={(e) => setPassword(e.target.value)}
+                  value={password}
+                  type="password"
+                  placeholder="Enter Password"
+                />
                 <img
                   src={require("../../assets/images/view-password-icon.png")}
                   alt=""
@@ -49,14 +88,21 @@ const SignUp = () => {
             <div className="w-100 align-center">
               <p>Confirm Password</p>
               <div className="input">
-                <input type="password" placeholder="Enter Password" />
+                <input
+                  onChange={(e) => setConfirmPassword(e.target.value)}
+                  value={confirmPassword}
+                  type="password"
+                  placeholder="Enter Password"
+                />
                 <img
                   src={require("../../assets/images/view-password-icon.png")}
                   alt=""
                 />
               </div>
             </div>
-            <button type="submit">Sign Up</button>
+            <button type="submit" onClick={handleSignUp}>
+              Sign Up
+            </button>
             <h5>
               Already have an account?<Link to="/login">Login</Link>
             </h5>
