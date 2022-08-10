@@ -30,7 +30,7 @@
   display: flex;
 }
 .left-flex{
-  background-image: url('../../../assets/images/273_Pink_Halftone_BG_2.png');
+  background-image: url('../../../assets/images/login-background.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 30%;

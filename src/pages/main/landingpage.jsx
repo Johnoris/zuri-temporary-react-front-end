@@ -139,7 +139,7 @@ const LandingPage = () => {
                         <TemplateCard href="#" text="Profile Card Template" src={require("../../assets/images/profile-card.png")}/>
                         <TemplateCard href="#" text="Portfolio Website Template" src={require("../../assets/images/portfolio.png")}/>
                         <TemplateCard href="#" text="Business Website Template" src={require("../../assets/images/business-website.png")}/>
-                        <TemplateCard href="#" text="Portfolio Website Template" src={require("../../assets/images/business-website.png")}/>
+                        <TemplateCard href="#" text="Profile Card Template" src={require("../../assets/images/profile-card.png")}/>
                         <TemplateCard href="#" text="Business Website Template" src={require("../../assets/images/business-website.png")}/>
                         <TemplateCard href="#" text="Profile Card Template" src={require("../../assets/images/profile-card.png")}/>
                 </div>
