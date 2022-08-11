@@ -1,0 +1,67 @@
+.customize-image{
+    position: fixed;
+    width: 370px;
+    height: 523px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    top: 17px;
+    left: 17px;
+    padding: 16px;
+}
+.add-img-btn{
+    background-color: #E20088;
+    height: 64px;
+    width: 153px;
+    border-radius: 8px;
+    border: none;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.015em;
+    color: #ffffff;
+    margin: 21px 0;
+}
+.image-input {
+    width: 334px;
+    height: 272px;
+    background-color: #E8E7E7;
+    border-radius: 6.64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 19px;
+    margin-bottom: 21px;
+}
+.image-input-field{
+    display: none;
+}
+.image-input p{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 11px;
+    color: #63636380;
+}
+.image-input h6{
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 11px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #63636380;
+}
+.imageview{
+    position: absolute;
+    width: 338px;
+    height: 272px;
+    top: 150px;
+    left : 16px;
+    background-color:#FFFFFF;
+    display: flex;
+    align-items : center;
+    justify-content : center;
+    z-index: -1;
+}

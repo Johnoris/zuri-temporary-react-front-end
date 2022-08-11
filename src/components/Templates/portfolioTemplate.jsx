@@ -1,8 +1,13 @@
+import ButtonCustomization from "./buttoncustomization";
+import CustomizeIcons from "./customizesocialicons";
+import ImageCustomization from "./imageCustomization";
 import TemplateNav from "./template-nav";
+import TextCustomization from "./text-customization";
 
 const PortfolioTemplate = () => {
     return(
         <div>
+            <ImageCustomization/>
           <TemplateNav/>
           <div className="portfolio-template-body">
             <div className="portfolio-template-top">
@@ -18,8 +23,8 @@ const PortfolioTemplate = () => {
             <div className="portfolio-template-main">
                 <div className="portfolio-template-main-text">
                     <h1>Hi, I’m John Josh</h1>
-                    <p>Product Designer</p>
-                    <p>High level experience in user centerd designsolving user problem and creating solutions that enhance productivity and growth in businesses throu designs</p>
+                    <p id="job-title">Product Designer</p>
+                    <p id="job-description">High level experience in user centerd designsolving user problem and creating solutions that enhance productivity and growth in businesses throu designs</p>
                     <button>CONTACT ME</button>
                 </div>
                 <div>

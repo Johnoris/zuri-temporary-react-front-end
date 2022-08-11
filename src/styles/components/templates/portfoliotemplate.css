@@ -78,6 +78,7 @@
     height: 56px;
     border-radius: 8.33px;
     background-color: #ffffff;
+    border: none;
     font-family: Inter;
     font-size: 13px;
     font-weight: 700;
@@ -86,4 +87,9 @@
     text-align: center;
     color: #3B009A;
 
+}
+@media (max-width: 1222px) {
+ .portfolio-template-main-text{
+    margin-bottom: 40px;
+ }   
 }
