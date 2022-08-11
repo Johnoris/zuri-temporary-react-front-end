@@ -1,59 +1,54 @@
 import { useState } from "react";
-import { useDropzone } from "react-dropzone"
+import defaultimage from '../../assets/images/portfolio-template-default.png';
 
 const ImageCustomization = () => {
-    const [files, setFiles] = useState([])
-
-    const { getRootProps, getInputProps } = useDropzone({
-      accept: "image/*",
-      onDrop: (acceptedFiles) => {
-        setFiles(
-          acceptedFiles.map((file) =>
-            Object.assign(file, {
-              preview: URL.createObjectURL(file),
-            })
-          )
-        )
-      },
-    })
-  
-    const images = files.map((file) => (
-      <div key={file.name}>
-        <div>
-          <img src={file.preview} style={{ width: "200px" }} alt="preview" />
-        </div>
-      </div>
-    ))
-    const handleImageDrag = () => {
-        document.getElementById("imageview").style.zIndex = "5";
-    }
-
+  const [{src ,alt }, setImage] = useState({
+    src : defaultimage,
+    alt : 'add-img'
+  })
+  const handleImg = (e) => {
+    if(e.target.files[0]) {
+        setImage({
+            src: URL.createObjectURL(e.target.files[0]),
+            alt: e.target.files[0].name
+        });    
+    }  
+    document.getElementById('image-preview').style.display = 'block'; 
+    document.getElementById('image-input').style.display = 'none'; 
+  }
+  const handleAddImg = () => {
+    document.getElementById("portfolio-img").setAttribute ("src", src)
+  }
+  const handleClose = () => {
+    document.getElementById("customize-image-bar").style.display = "none"
+}
     return(
-        <div className="customize-image">
+        <div className="customize-image" id="customize-image-bar">
             <div className="close-container">
                 <h4>You are customizing image</h4>
-                <img src={require("../../assets/images/close-icon.png")} alt="close"/>
+                <img onClick={handleClose} src={require("../../assets/images/close-icon.png")} alt="close"/>
             </div>
-            <button className="add-img-btn">Add image</button>
-            <div {...getRootProps()}>
-                <div  id="imageview" className="imageview">
-                {images}
+            <button className="add-img-btn" onClick={handleAddImg}>Add image</button>
+            <div>
+                <div className="image-preview" id="image-preview">
+                  <img src={src} alt={alt} />
                 </div>
-                <label htmlFor="upload-photo" onDrag={handleImageDrag}>
+                <label htmlFor="upload-photo" id="image-input">
                     <div className="image-input">
                         <p>Drag and drop your image here </p>
                         <span><img src={require("../../assets/images/add-img.png")} alt="add"/></span>
                         <h6>Select from your folder</h6>
                     </div>
                 </label>
-                <input {...getInputProps()}
+                <input
+                    onChange={handleImg}
                     id="upload-photo"
                     className="image-input-field"
                     type="file"
                     accept="image/*"
                     />
             </div>
-            <button className="preview">Preview</button>
+            <button onClick={handleClose} className="preview">Preview</button>
         </div>
     )
 }

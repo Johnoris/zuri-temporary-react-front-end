@@ -8,7 +8,7 @@ export const postData = async (data) => {
   console.log(response);
 };
 
-const SignUp = () => {
+const SignUp = ({image}) => {
   const navigate = useNavigate();
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");

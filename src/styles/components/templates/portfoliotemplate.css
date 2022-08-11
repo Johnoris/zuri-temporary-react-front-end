@@ -1,4 +1,4 @@
-.portfolio-template-body{
+.portfolio-template-header{
     background-color: #3B009A;
     padding: 0 126px;
     padding-top: 49.83px;
@@ -87,6 +87,65 @@
     text-align: center;
     color: #3B009A;
 
+}
+.portfolio-section{
+    display: flex;
+    align-items: center;
+    gap: 142px;
+    padding: 0 185px;
+    margin-top: 120px;
+}
+.portfolio-section h3{
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0.02em;
+    color: #00112E;
+    margin-bottom: 32px;
+}
+.portfolio-section h4{
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0.02em;
+    color: #00112E;
+    margin-bottom: 32px;
+}
+.portfolio-section h5{
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #00112E;
+    margin-bottom: 32px;
+}
+.portfolio-section button{
+    padding: 24px;
+    background-color: #3B009A;
+    color: #ffffff;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0.025em;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+}
+.portfolio-section div{
+    max-width: 588px;
+}
+.portfolio-img{
+    width: 480px;
+    height: 465px;
+}
+.portfolio-img img{
+    width: 100%;
+    height: 100%;
 }
 @media (max-width: 1222px) {
  .portfolio-template-main-text{

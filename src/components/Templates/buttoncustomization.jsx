@@ -1,9 +1,12 @@
 const ButtonCustomization = () => {
+    const handleClose = () => {
+        document.getElementById("customize-button-bar").style.display = "none"
+    }
     return(
-        <div className="customize-button">
+        <div className="customize-button" id="customize-button-bar">
             <div className="close-container">
                 <h4>You are customizing Button </h4>
-                <img src={require("../../assets/images/close-icon.png")} alt=""/>
+                <img onClick={handleClose} src={require("../../assets/images/close-icon.png")} alt=""/>
             </div>
             <div>
                 <h4>Button Text</h4>
@@ -15,7 +18,7 @@ const ButtonCustomization = () => {
                     <input type="color" defaultValue="#ffffff"/>
                 </div>
             </div>
-            <button className="preview">Preview</button>
+            <button onClick={handleClose} className="preview">Preview</button>
         </div>
     )
 }

@@ -7,7 +7,7 @@ const DashboardBar = ({ name }) => {
         {" "}
         <img src={require("../assets/images/Logo-white.png")} alt="" />
       </div>
-      <button href="#">Templates</button>
+      <Link to="/dashboard/templates"><button href="#">Templates</button></Link>
       <ul>
         <li>My Designs</li>
         <li>Published Designs</li>
