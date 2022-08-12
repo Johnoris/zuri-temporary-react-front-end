@@ -1,5 +1,5 @@
 .customize-icons{
-    position: absolute;
+    position: fixed;
     top: 16px;
     left: 16px;
     border-radius: 8px;
@@ -7,6 +7,7 @@
     background-color: #ffffff;
     width: 368px;
     height: 790px;
+    box-shadow: 0px 20px 50px #000000;
 }
 .customize-icons .add-social{
     background-color: #E20088;
@@ -20,7 +21,11 @@
     line-height: 32px;
     letter-spacing: 0.015em;
     color: #ffffff;
-    margin: 21px 0;
+    margin: 15px 0;
+}
+.customize-icons .add-socials-icons{
+    width: 40px;
+    height: 40px;
 }
 .social-container{
     display: flex;
@@ -40,6 +45,13 @@
     width: 244px;
     border: none;
     outline: none;
+}
+.social-container input ::placeholder{
+    height: 40px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
 }
 .social-wrapper h4{
     font-family: Inter;

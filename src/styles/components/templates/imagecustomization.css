@@ -7,6 +7,7 @@
     top: 17px;
     left: 17px;
     padding: 16px;
+    box-shadow: 0px 20px 50px #000000;
 }
 .add-img-btn{
     background-color: #E20088;
@@ -20,7 +21,7 @@
     line-height: 32px;
     letter-spacing: 0.015em;
     color: #ffffff;
-    margin: 21px 0;
+    margin: 15px 0;
 }
 .image-input {
     width: 334px;

@@ -1,81 +1,76 @@
 import { useState } from "react";
 
-const TextCustomization = () => {
-    const [text, setText] = useState("");
-    const [active , setActive] = useState("")
-    // const setH1Active = () => {
-    //     document.querySelector("")
-    //     setActive("h1")
-    //     document.querySelector("h1").style.border = "1px dotted #ffffff"
-    // }
-
+const TextCustomization = (active) => {
     const [textColor , setTextColor] = useState("#ffffff");
-    const [fontSize , setFontSize] = useState("47px");
     const handleTextColorChange = (e) => {
-        setTextColor(e.target.value)
-        
-        document.querySelector("h1").style.color = textColor
+        setTextColor(e.target.value);
+        document.getElementById(active.active).style.color = e.target.value
     }
     const handleClose = () => {
         document.getElementById("customize-text-bar").style.display = "none"
     }
     const handleTextAlignCenter = () => {
-        document.querySelector("h1").style.textAlign = "center"
+        document.getElementById(active.active).style.textAlign = "center"
     }
     const handleTextAlignLeft = () => {
-        document.querySelector("h1").style.textAlign = "left"
+        document.getElementById(active.active).style.textAlign = "left"
     }
 
     const handleTextAlignRight = () => {
-        document.querySelector("h1").style.textAlign = "right"
+        document.getElementById(active.active).style.textAlign = "right"
     }
     const handleTextAlignJustify = () => {
-        document.querySelector("h1").style.textAlign = "justify"
+        document.getElementById(active.active).style.textAlign = "justify"
     }
     const handleUnderline = () => {
-        document.querySelector("h1").style.textDecoration = "underline"
+        document.getElementById(active.active).style.textDecoration = "underline"
     }
     const handleLineThrough = () => {
-        document.querySelector("h1").style.textDecoration = "line-through"
+        document.getElementById(active.active).style.textDecoration = "line-through"
     }
     const handleFontSize = (e) => {
-        setFontSize(e.target.value)
-        document.querySelector("h1").style.fontSize = fontSize
-        console.log(fontSize)
+        document.getElementById(active.active).style.fontSize = (e.target.value)
     }
     const handleFontWeight = (e) => {
-        let fontWeight = e.target.value
-        console.log(fontWeight)
-        if (fontWeight === "regular") {
-            document.querySelector("h1").style.fontWeight = 200;
+        if (e.target.value === "regular") {
+            document.getElementById(active.active).style.fontWeight = 200;
         }
-        else if (fontWeight === "semibold"){
-            document.querySelector("h1").style.fontWeight = 400;
+        else if (e.target.value === "semibold"){
+            document.getElementById(active.active).style.fontWeight = 400;
         }
-        else if (fontWeight === "bold"){
-            document.querySelector("h1").style.fontWeight = 600;
+        else if (e.target.value === "bold"){
+            document.getElementById(active.active).style.fontWeight = 600;
         }
-        else if (fontWeight === "extrabold"){
-            document.querySelector("h1").style.fontWeight = 800;
+        else if (e.target.value === "extrabold"){
+            document.getElementById(active.active).style.fontWeight = 800;
         }
-        else if (fontWeight === "italic"){
-            document.querySelector("h1").style.fontStyle = "italic";
+        else if (e.target.value === "italic"){
+            document.getElementById(active.active).style.fontStyle = "italic";
         }
-        else if (fontWeight === "black"){
-            document.querySelector("h1").style.color = "black";
+        else if (e.target.value === "black"){
+            document.getElementById(active.active).style.color = "black";
         }
-        document.querySelector("h1").style.fontSize = fontSize
     }
     const handleFontFamily = (e) => {
-        let fontFamily = e.target.value
-        document.querySelector("h1").style.fontFamily = fontFamily;
+        document.getElementById(active.active).style.fontFamily = e.target.value;
     }
     const handleTextChange =  () => {
-            setText(document.querySelector("textarea").value)
-            document.getElementById("job-description").innerHTML = text
-            console.log(text)
+            document.getElementById(active.active).innerHTML = document.querySelector("textarea").value
     }
-
+    const handleTextTransform = (e) => {
+        document.getElementById(active.active).style.textTransform = e.target.value;
+    }
+    const [left ,setLeft] = useState(false)
+    const handleSwitch = () => {
+        setLeft(!left)
+        if (left === false){
+        document.getElementById("customize-text-bar").style.right = "17px";
+        document.getElementById("customize-text-bar").style.left = "auto";
+        }
+        else{
+            document.getElementById("customize-text-bar").style.left = "17px";
+        }
+    }
 
     return(
         <div className="customize-text" id="customize-text-bar">
@@ -83,6 +78,7 @@ const TextCustomization = () => {
                 <h4>You are customizing text</h4>
                 <img onClick={handleClose} src={require("../../assets/images/close-icon.png")} alt=""/>
             </div>
+            <h4 onClick={handleSwitch}>switch sides</h4>
             <button onClick={handleTextChange} >Add Text</button>
             <div>
                 <textarea className="customize-text-change" defaultValue="High level experience in user centered design solving user problem and creating solutions that enhance productivity and growth in businesses through designs"></textarea>
@@ -129,12 +125,10 @@ const TextCustomization = () => {
                         <option value="impact">Impact</option>
                         <option value="gill sans">Gill Sans</option>
                     </select>
-                    <select className="text-transform">
+                    <select className="text-transform" onChange={handleTextTransform}>
                         <option value="uppercase">UPPER CASE</option>
                         <option value="lowercase">lower case</option>
-                        <option value="uppercase">Sentence case</option>
-                        <option value="titlecase">Title Case</option>
-                        <option value="togglecase">toGGLe caSe</option>
+                        <option value="capitalize">Title Case</option>
                     </select>
                 </div>
                 <div className="d-flex text-color">

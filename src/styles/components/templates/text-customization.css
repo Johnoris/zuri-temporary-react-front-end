@@ -1,12 +1,13 @@
 .customize-text{
-    position: fixed;
+    position: absolute;
     background-color: #ffffff;
     width: 370px;
-    height: 100vh;
+    height: 900px;
     border-radius: 8px;
     top: 17px;
-    right: 17px;
+    left: 17px;
     padding: 16px;
+    box-shadow: 0px 20px 50px #000000;
 }
 .customize-text .text-align{
     display: flex;
@@ -35,6 +36,14 @@
     letter-spacing: 0.015em;
     color: #ffffff;
     margin: 21px 0;
+}
+.customize-text select{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
 }
 .customize-text-change{
     background-color: #E8E7E7;
