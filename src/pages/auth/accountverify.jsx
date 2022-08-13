@@ -1,3 +1,5 @@
+import Button from "../../components/Button";
+
 const AccountVerify = () => {
     return (
     <div className="account-verify">
@@ -6,6 +8,7 @@ const AccountVerify = () => {
             <img src={require("../../assets/images/favicon.png")} alt="" className="coloured-thirtin-logo"/>
         </div>
         <div className="account-verified-container">
+            <div> <Button /> </div>
             <div className="verify-form">
                 <h2>Account Verification</h2>
                 <p>A four digit pin has been sent to<span>osi************gmail.com</span>. Kindly input the code below</p>

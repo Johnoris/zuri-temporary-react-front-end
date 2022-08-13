@@ -1,3 +1,4 @@
+import Button from "../../components/Button";
 
 const ForgotPassword = () => {
     return(
@@ -7,6 +8,7 @@ const ForgotPassword = () => {
                 <img src={require("../../assets/images/favicon.png")} alt="" className="coloured-thirtin-logo"/>
             </div>
             <main >
+                <div> <Button /> </div>
                 <div className="forgot-password-parent">
                     <div className="forgot-password-text">
                         <h3>Forgot Password?</h3>
