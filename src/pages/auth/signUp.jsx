@@ -3,6 +3,7 @@ import GoogleLogin from "react-google-login";
 import { Link, useNavigate } from "react-router-dom";
 
 import axios from "../../axios";
+import Button from "../../components/Button";
 export const postData = async (data) => {
   const response = await axios.post("/posts", data);
   console.log(response);
@@ -51,6 +52,7 @@ const SignUp = ({image}) => {
           </div>
         </div>
         <div className="right-flex">
+          <div className="component-btn"> <Button /> </div>
           <div className="sign-up-form">
             <h3>Sign Up</h3>
             <form className="w-100">
@@ -109,7 +111,7 @@ const SignUp = ({image}) => {
                   />
                 </div>
               </div>
-              <button onClick={handleSignUp} type="submit">
+              <button onClick={handleSignUp} type="submit" className="signup">
                 Sign Up
               </button>
               <h5>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import GoogleLogin from "react-google-login";
 import { Link, useNavigate } from "react-router-dom";
+import Button from "../../components/Button";
 import Password from "../../components/password";
 import { postData } from "./signUp";
 
@@ -38,7 +39,9 @@ const Login = () => {
         />
       </div>
       <main>
+        <div className="component-btn"> <Button /> </div>
         <div className="login-box">
+          <div >
           <div className="login-text">
             <h1 className="login">Login</h1>
           </div>
@@ -151,6 +154,8 @@ const Login = () => {
               </button>
             </div>
           </div>
+          </div>
+         
         </div>
       </main>
     </div>

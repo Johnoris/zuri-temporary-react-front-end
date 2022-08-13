@@ -15,14 +15,15 @@
   margin: 0 auto;
   border-radius: 200px;
 }
+.component-btn{
+  width: 90%;
+}
 .mgt-48 {
   margin-top: 48px;
   box-shadow: 0px 2px 4px rgb(0 0 0 / 8%) !important;
   margin-bottom: 10rem;
   width: 500px;
   color: #525252;
-
-
 }
 .sign-up-wrapper {
   max-width: 1440px;
@@ -41,8 +42,6 @@
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  place-items: center;
   width: 70%;
 }
 .sign-up-icon {
@@ -146,7 +145,7 @@ align-items: center;
 color: #000000;
 margin-top: 1rem;
 }
-.sign-up-wrapper button {
+.sign-up-wrapper .signup {
   width: 500px;
   height: 64px;
   border-radius: 8px;
