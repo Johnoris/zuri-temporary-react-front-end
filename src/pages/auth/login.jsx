@@ -100,12 +100,12 @@ const Login = () => {
               </div>
 
               <div>
-                <a
-                  href="forgetpassword.html"
+                <Link
+                  to="/forgot-password"
                   className="forgot-password no-break"
                 >
                   Forgot Password?
-                </a>
+                </Link>
               </div>
             </div>
 

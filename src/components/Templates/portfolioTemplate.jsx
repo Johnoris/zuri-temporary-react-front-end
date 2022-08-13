@@ -41,10 +41,10 @@ const PortfolioTemplate = () => {
     }
     return(
         <div>
-          {textActive && <TextCustomization active={activeID}/>}
-          {imageActive && <ImageCustomization active={activeID}/>}
-          {buttonActive && <ButtonCustomization active={activeID}/>}
-          {socialActive && <CustomizeIcons active={activeID}/>}
+          {textActive && <TextCustomization active={activeID} textstate={textActive} settextstate={setTextActive}/>}
+          {imageActive && <ImageCustomization active={activeID} imageactive={imageActive} setimageactive={setImageActive}/>}
+          {buttonActive && <ButtonCustomization active={activeID} buttonactive={buttonActive} setbuttonactive={setButtonActive}/>}
+          {socialActive && <CustomizeIcons active={activeID}  socialactive={socialActive} setsocialactive={setsocialActive}/>}
           <TemplateNav/>
           <div className="portfolio-template-body">
             <div className="portfolio-template-header">
@@ -74,7 +74,7 @@ const PortfolioTemplate = () => {
                 <div className="my-portfolio">
                     <h2>MY PORTFOLIO</h2>
                     <div className="portfolio-section">
-                        <span><img onClick={handleImageActive} id="portfolio-img1" src={require("../../assets/images/portfolio-1.png")} alt=""/></span>
+                        <div className="span"><img onClick={handleImageActive} id="portfolio-img1" src={require("../../assets/images/portfolio-1.png")} alt=""/></div>
                         <div>
                             <h3 onClick={handleTextActive} id="portfolio-section-1-h3">AREA E-MARKET CASE STUDY</h3>
                             <h4 onClick={handleTextActive} id="portfolio-section-1-h4">PROJECT SUMMARY</h4>
@@ -89,10 +89,10 @@ const PortfolioTemplate = () => {
                             <h5 onClick={handleTextActive} id="portfolio-section-2-h5">Lörem ipsum ebel vitrede. Intrassa oligt till äprer. Ack refana. Orägt domis pöl epingen. Kringmyndighet semiitet, ett krora. Du kan vara drabbad. </h5>
                             <button id="button-4" onClick={handleButtonActive} className="portfolio-buttons">VIEW PROJECT</button>
                         </div>
-                        <span><img onClick={handleImageActive} id="portfolio-img2" src={require("../../assets/images/portfolio-2.png")} alt=""/></span>
+                        <div className="span"><img onClick={handleImageActive} id="portfolio-img2" src={require("../../assets/images/portfolio-2.png")} alt=""/></div>
                     </div>
                     <div className="portfolio-section">
-                        <span><img onClick={handleImageActive} id="portfolio-img3" src={require("../../assets/images/portfolio-3.png")} alt=""/></span>
+                        <div className="span"><img onClick={handleImageActive} id="portfolio-img3" src={require("../../assets/images/portfolio-3.png")} alt=""/></div>
                         <div>
                             <h3 onClick={handleTextActive} id="portfolio-section-3-h3">AREA E-MARKET CASE STUDY</h3>
                             <h4 onClick={handleTextActive} id="portfolio-section-3-h4">PROJECT SUMMARY</h4>

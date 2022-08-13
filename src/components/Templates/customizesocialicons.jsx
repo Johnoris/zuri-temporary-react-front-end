@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const CustomizeIcons = () => {
+const CustomizeIcons = (props) => {
     const [linkedin , setLinkedin] = useState(true)
     const [ facebook , setFacebook] = useState(true)
     const [ twitter , setTwitter] = useState(true)
@@ -63,13 +63,17 @@ const CustomizeIcons = () => {
             document.getElementById("customize-icons").style.left = "17px";
         }
     }
+    const handleClose = () => {
+        document.getElementById("customize-icons").style.display = "none";
+        props.setsocialactive(false)
+    }
     return(
-        <div className="customize-icons">
+        <div className="customize-icons" id="customize-icons">
             <div className="close-container">
                 <h4>You are customizing text</h4>
-                <img  src={require("../../assets/images/close-icon.png")} alt=""/>
+                <img  onClick={handleClose} src={require("../../assets/images/close-icon.png")} alt=""/>
             </div>
-            <h4 onClick={handleSwitch}>switch sides</h4>
+            <h4 id="switch-sides" onClick={handleSwitch}>switch sides</h4>
             <button className="add-social">Add Social</button>
             <div  className="social-wrapper">  
                 <h4>Linkedin</h4>
@@ -125,7 +129,7 @@ const CustomizeIcons = () => {
                     </div>
                 </div>
             </div> */}
-            <button className="preview">Preview</button>
+            <button onClick={handleClose} className="preview">Preview</button>
         </div>
     )
 }

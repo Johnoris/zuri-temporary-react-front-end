@@ -7,11 +7,11 @@ const DashboardBar = ({ name }) => {
         {" "}
         <img src={require("../assets/images/Logo-white.png")} alt="" />
       </div>
-      <Link to="/dashboard/templates"><button href="#">Templates</button></Link>
+      <Link to="/dashboard"><button href="#">Templates</button></Link>
       <ul>
         <li>My Designs</li>
         <li>Published Designs</li>
-        <li>Logout</li>
+        <Link to="/login"><li>Logout</li></Link>
       </ul>
       <div className="user-details">
         <div className="user-initials">

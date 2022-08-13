@@ -2,6 +2,7 @@ import Footer from "../../components/footer"
 import Nav from "../../components/nav"
 import NeedHelp from "../../components/needhelp"
 import TemplateCard from "../../components/templateCard"
+import { Link } from "react-router-dom"
 
 const LandingPage = () => {
     return (
@@ -20,7 +21,7 @@ const LandingPage = () => {
 
                     <div className="justify-center">
                         <div className="start-building">
-                            <a href="#">Start building your website now</a>
+                            <Link to="/signup">Start building your website now</Link>
                         </div>
                     </div>
                 </div>
@@ -108,7 +109,7 @@ const LandingPage = () => {
                             </div>
                             <div>
                                 <div className="btn">
-                                    <a href="#">Start Building now</a>
+                                    <Link to="/signup">Start Building now</Link>
                                 </div>
                             </div>
                         </div>
@@ -129,7 +130,7 @@ const LandingPage = () => {
                         </div>
                         <div>
                             <div className="start-building-btn">
-                                <a href="#">View Template</a>
+                                <Link to="/templates">View Template</Link>
                             </div>
                         </div>
                     </div>

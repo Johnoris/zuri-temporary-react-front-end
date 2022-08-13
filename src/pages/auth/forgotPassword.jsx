@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 
 const ForgotPassword = () => {
     return(
@@ -16,7 +17,7 @@ const ForgotPassword = () => {
                                 <p>Email</p>
                                 <input type="text" placeholder="GabrielIsaac@gmaiil.com"/>
                             </div>
-                            <input className="submit-forgot-password" type="submit" value="Send Code"/>
+                            <Link to="/account-verify"><input className="submit-forgot-password" type="submit" value="Send Code"/></Link>
                         </div>
                     </div>
                 </div>

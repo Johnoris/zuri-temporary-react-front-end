@@ -1,15 +1,18 @@
 import { useState } from "react"
 
-const ButtonCustomization = (active) => {
-    console.log(active)
+const ButtonCustomization = (props) => {
     const handleClose = () => {
         document.getElementById("customize-button-bar").style.display = "none"
+        props.setbuttonactive(false)
     }
     const handleHref= (e) => {
-        document.getElementById(active.active).setAttribute("href", e.target.value)
+        document.getElementById(props.active).setAttribute("href", e.target.value)
     }
     const handleValue= (e) => {
-        document.getElementById(active.active).innerHTML = e.target.value;
+        document.getElementById(props.active).innerHTML = e.target.value;
+    }
+    const handleBackgroundColor = (e) => {
+            document.getElementById(props.active).style.backgroundColor = e.target.value;
     }
     const [left ,setLeft] = useState(false)
     const handleSwitch = () => {
@@ -28,15 +31,21 @@ const ButtonCustomization = (active) => {
                 <h4>You are customizing Button </h4>
                 <img onClick={handleClose} src={require("../../assets/images/close-icon.png")} alt=""/>
             </div>
-            <h4 onClick={handleSwitch}>switch sides</h4>
+            <h4 onClick={handleSwitch} id="switch-sides" >switch sides</h4>
             <div>
                 <h4>Button Text</h4>
                 <input type="text" className="contact-me" onChange={handleValue} defaultValue="CONTACT ME"/>
                 <p>URL Link  (where do you want this button to direct your users to?)</p>
                 <input className="href" type="text" onChange={handleHref} defaultValue="http://asdfghjkk@gmail.com"/>
-                <div className="d-flex">
-                    <h5>Background Color:</h5>
-                    <input type="color" defaultValue="#ffffff"/>
+                <div>
+                    <div className="d-flex">
+                        <h5>Background Color:</h5>
+                        <input type="color" onChange={handleBackgroundColor} defaultValue="#ffffff"/>
+                    </div>
+                    <div className="d-flex">
+                        <h5>or input color hex code:</h5>
+                        <input type="text" className="input-color" onChange={handleBackgroundColor} defaultValue="ffffff"/>
+                    </div>
                 </div>
             </div>
             <button onClick={handleClose} className="preview">Preview</button>
