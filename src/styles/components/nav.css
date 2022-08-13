@@ -14,6 +14,7 @@ nav .navbar a{
     line-height: 32px;
     letter-spacing: 0.015em;
     margin-right: 1.6rem;
+    cursor: pointer;
 }
 nav div a:active{
     color: #E20088;
@@ -21,6 +22,7 @@ nav div a:active{
 }
 nav div a:hover{
     color: #E20088;
+    font-weight: 600;
 }
 nav div .get-started{
     background-color: #E20088;
@@ -29,6 +31,12 @@ nav div .get-started{
     color: #FFF;
     margin-right: 0;
     font-weight: 700;
+}
+nav div .get-started:active{
+    color: #FFF;
+}
+nav div .get-started:hover{
+    color: #FFF;
 }
 @media (max-width: 850px) {
     .navbar{

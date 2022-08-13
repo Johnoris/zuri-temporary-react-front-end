@@ -1,64 +1,65 @@
 import { useState } from "react";
 
-const TextCustomization = (active) => {
+const TextCustomization = (props) => {
     const [textColor , setTextColor] = useState("#ffffff");
     const handleTextColorChange = (e) => {
         setTextColor(e.target.value);
-        document.getElementById(active.active).style.color = e.target.value
+        document.getElementById(props.active).style.color = e.target.value
     }
     const handleClose = () => {
         document.getElementById("customize-text-bar").style.display = "none"
+        props.settextactive(false)
     }
     const handleTextAlignCenter = () => {
-        document.getElementById(active.active).style.textAlign = "center"
+        document.getElementById(props.active).style.textAlign = "center"
     }
     const handleTextAlignLeft = () => {
-        document.getElementById(active.active).style.textAlign = "left"
+        document.getElementById(props.active).style.textAlign = "left"
     }
 
     const handleTextAlignRight = () => {
-        document.getElementById(active.active).style.textAlign = "right"
+        document.getElementById(props.active).style.textAlign = "right"
     }
     const handleTextAlignJustify = () => {
-        document.getElementById(active.active).style.textAlign = "justify"
+        document.getElementById(props.active).style.textAlign = "justify"
     }
     const handleUnderline = () => {
-        document.getElementById(active.active).style.textDecoration = "underline"
+        document.getElementById(props.active).style.textDecoration = "underline"
     }
     const handleLineThrough = () => {
-        document.getElementById(active.active).style.textDecoration = "line-through"
+        document.getElementById(props.active).style.textDecoration = "line-through"
     }
     const handleFontSize = (e) => {
-        document.getElementById(active.active).style.fontSize = (e.target.value)
+        document.getElementById(props.active).style.fontSize = (e.target.value)
     }
     const handleFontWeight = (e) => {
         if (e.target.value === "regular") {
-            document.getElementById(active.active).style.fontWeight = 200;
+            document.getElementById(props.active).style.fontWeight = 200;
         }
         else if (e.target.value === "semibold"){
-            document.getElementById(active.active).style.fontWeight = 400;
+            document.getElementById(props.active).style.fontWeight = 400;
         }
         else if (e.target.value === "bold"){
-            document.getElementById(active.active).style.fontWeight = 600;
+            document.getElementById(props.active).style.fontWeight = 600;
         }
         else if (e.target.value === "extrabold"){
-            document.getElementById(active.active).style.fontWeight = 800;
+            document.getElementById(props.active).style.fontWeight = 800;
         }
         else if (e.target.value === "italic"){
-            document.getElementById(active.active).style.fontStyle = "italic";
+            document.getElementById(props.active).style.fontStyle = "italic";
         }
         else if (e.target.value === "black"){
-            document.getElementById(active.active).style.color = "black";
+            document.getElementById(props.active).style.color = "black";
         }
     }
     const handleFontFamily = (e) => {
-        document.getElementById(active.active).style.fontFamily = e.target.value;
+        document.getElementById(props.active).style.fontFamily = e.target.value;
     }
     const handleTextChange =  () => {
-            document.getElementById(active.active).innerHTML = document.querySelector("textarea").value
+            document.getElementById(props.active).innerHTML = document.querySelector("textarea").value
     }
     const handleTextTransform = (e) => {
-        document.getElementById(active.active).style.textTransform = e.target.value;
+        document.getElementById(props.active).style.textTransform = e.target.value;
     }
     const [left ,setLeft] = useState(false)
     const handleSwitch = () => {
@@ -78,10 +79,10 @@ const TextCustomization = (active) => {
                 <h4>You are customizing text</h4>
                 <img onClick={handleClose} src={require("../../assets/images/close-icon.png")} alt=""/>
             </div>
-            <h4 onClick={handleSwitch}>switch sides</h4>
+            <h4 id="switch-sides" onClick={handleSwitch}>switch sides</h4>
             <button onClick={handleTextChange} >Add Text</button>
             <div>
-                <textarea className="customize-text-change" defaultValue="High level experience in user centered design solving user problem and creating solutions that enhance productivity and growth in businesses through designs"></textarea>
+                <textarea className="customize-text-change" defaultValue={""}></textarea>
             </div>
             <div className="text-align">
                 <img onClick={handleTextAlignLeft} src={require("../../assets/images/dark-text-align-left-icon.png")} alt=""/>

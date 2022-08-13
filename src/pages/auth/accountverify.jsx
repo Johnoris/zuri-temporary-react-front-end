@@ -1,4 +1,5 @@
 import Button from "../../components/Button";
+import { Link } from 'react-router-dom'
 
 const AccountVerify = () => {
     return (
@@ -18,7 +19,7 @@ const AccountVerify = () => {
                      <input type="text" placeholder="*" />
                     <input type="text" placeholder="*" />
                 </div>
-                <input type="submit" id="account-verify-submit" value="Verify Account" />
+                <Link to="/verify-success"><input type="submit" id="account-verify-submit" value="Verify Account" /></Link>
             </div>
         </div>
     </div>

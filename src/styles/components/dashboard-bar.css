@@ -1,10 +1,25 @@
 .dashboard-bar{
     width: 402px;
     height: 100vh;
+    position: fixed;
     background-color:  #2D001B;
     display: flex;
-    padding: 64px 74px 0 74px;
+    padding: 64px 74px 50px 74px;
     flex-direction: column;
+    overflow-y: scroll;
+}
+.dashboard-bar::-webkit-scrollbar {
+    width: 5px;
+}
+
+.dashboard-bar::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.dashboard-bar::-webkit-scrollbar-thumb {
+    background-color: #dedede;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
 }
 .dashboard-bar ul{
     display: flex;
@@ -27,6 +42,7 @@
     height: 64px;
     background-color: #E20088;
     border-radius: 8px;
+    border: none;
     font-family: Inter;
     font-size: 16px;
     font-weight: 700;
@@ -42,7 +58,7 @@
 }
 .user-initials{
     border-radius: 50%;
-    width: 73px;
+    min-width: 73px;
     height: 73px;
     display: flex;
     align-items: center;

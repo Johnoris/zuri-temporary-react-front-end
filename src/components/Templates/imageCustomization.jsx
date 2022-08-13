@@ -1,7 +1,7 @@
 import { useState } from "react";
 import defaultimage from '../../assets/images/portfolio-template-default.png';
 
-const ImageCustomization = (active) => {
+const ImageCustomization = (props) => {
   const [{src ,alt }, setImage] = useState({
     src : defaultimage,
     alt : 'add-img'
@@ -17,10 +17,11 @@ const ImageCustomization = (active) => {
     document.getElementById('image-input').style.display = 'none'; 
   }
   const handleAddImg = () => {
-    document.getElementById(active.active).setAttribute ("src", src)
+    document.getElementById(props.active).setAttribute ("src", src)
   }
   const handleClose = () => {
     document.getElementById("customize-image-bar").style.display = "none"
+    props.setimageactive(false)
 }
 const [left ,setLeft] = useState(false)
 const handleSwitch = () => {
@@ -39,7 +40,7 @@ const handleSwitch = () => {
                 <h4>You are customizing image</h4>
                 <img onClick={handleClose} src={require("../../assets/images/close-icon.png")} alt="close"/>
             </div>
-            <h4 onClick={handleSwitch}>switch sides</h4>
+            <h4 id="switch-sides" onClick={handleSwitch}>switch sides</h4>
             <button className="add-img-btn" onClick={handleAddImg}>Add image</button>
             <div>
                 <div className="image-preview" id="image-preview">
