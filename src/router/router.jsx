@@ -12,7 +12,6 @@ import VerifySuccess from "../pages/auth/verifysuccess";
 import Template from "../pages/main/template";
 import Dashboard from "../pages/main/dashboard";
 import DesignPage from "../pages/main/designspage";
-import BusinessTemplate from "../components/templates/businesstemplate";
 
 const Router = () => {
   return (
@@ -24,8 +23,6 @@ const Router = () => {
         <Route path="/templates" element={<Template />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/design" element={<DesignPage/>}/>
-        {/* templates */}
-        <Route path="/dashboard/business-template" element={<BusinessTemplate/>} />
         {/* auth */}
         <Route path="/account-verify" element={<AccountVerify/>}/>
         <Route path="/verify-success" element={<VerifySuccess/>}/>
