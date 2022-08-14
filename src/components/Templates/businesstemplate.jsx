@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ButtonCustomization from "./buttoncustomization";
 import CustomizeIcons from "./customizesocialicons";
-import ImageCustomization from "./imageCustomization";
+import ImageCustomization from "./imagecustomization";
 import TemplateNav from "./template-nav";
 import TextCustomization from "./text-customization";
 
