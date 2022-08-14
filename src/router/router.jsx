@@ -15,9 +15,6 @@ import BusinessTemplate from "../components/templates/businesstemplate";
 import Template from "../pages/main/template";
 import Dashboard from "../pages/main/dashboard";
 import DesignPage from "../pages/main/designspage";
-import PortfolioTemplate from "../components/templates/portfoliotemplate";
-import PortfolioCard from "../components/templates/portfoliocard";
-import BusinessTemplate from "../components/templates/businesstemplate";
 
 const Router = () => {
   return (
