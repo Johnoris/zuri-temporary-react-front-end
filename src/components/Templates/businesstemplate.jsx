@@ -11,6 +11,7 @@ const BusinessTemplate = () => {
     const [buttonActive, setButtonActive] = useState(false)
     const [socialActive, setsocialActive] = useState(false)
     const [activeID, setActiveID] = useState("")
+    const [backgroundActive , setBackgroundActive] = useState(true)
     const handleTextActive = (e) => {
         setTextActive(true)
         setImageActive(false)
@@ -41,13 +42,13 @@ const BusinessTemplate = () => {
     }
     return(
         <>
-            {textActive && <TextCustomization active={activeID} textstate={textActive} settextstate={setTextActive}/>}
+            {textActive && <TextCustomization active={activeID} textstate={textActive} backgroundactive={backgroundActive} setBackgroundactive={setBackgroundActive} settextstate={setTextActive}/>}
             {imageActive && <ImageCustomization active={activeID} imageactive={imageActive} setimageactive={setImageActive}/>}
             {buttonActive && <ButtonCustomization active={activeID} buttonactive={buttonActive} setbuttonactive={setButtonActive}/>}
             {socialActive && <CustomizeIcons active={activeID} socialactive={socialActive} setsocialactive={setsocialActive}/>}
             <TemplateNav/>
             <div className="business-template">
-                <div className="business-template-nav">
+                <div className="business-template-nav" id="business-template-nav" onClick={ () => {setBackgroundActive("business-template-nav")}}>
                     <div className="business-template-nav-logo">
                         <h3 id="business-logo" onClick={handleTextActive}>I-Biz</h3>
                     </div>
@@ -58,11 +59,11 @@ const BusinessTemplate = () => {
                         <button id="business-contact-us" onClick={handleButtonActive}>CONTACT US</button>
                     </div>
                 </div>
-                <div className="business-template-top">
+                <div className="business-template-top" id="business-template-top" onClick={ () => {setBackgroundActive("business-template-top")}}>
                     <h1 id="business-header-1" onClick={handleTextActive}>Increase you productivity with a framework aid your business growth</h1>
                     <button id="business-request-proposal" onClick={handleButtonActive}>Request for a framework proposal</button>
                 </div>
-                <div className="business-template-about">
+                <div className="business-template-about" id="business-template-about" onClick={ () => {setBackgroundActive("business-template-about" )}}>
                     <div className="business-template--about-text">
                         <h4 onClick={handleTextActive} id="business-who-are-we">WHO WE ARE</h4>
                         <h5 onClick={handleTextActive} id="business-who-are-we-text">Your Business Platform for Performance-Driven and Effective Partner for the Growth you Desire</h5>
@@ -70,7 +71,7 @@ const BusinessTemplate = () => {
                     </div>
                     <div id="business-template-logo-1-wrapper"><img id="business-template-logo-1" onClick={handleImageActive} src={require('../../assets/images/business-template-about-img.png')} alt=""/></div>
                 </div>
-                <div className='business-template-meet-our-team'>
+                <div className='business-template-meet-our-team' id="business-template-meet-our-team" onClick={ () => {setBackgroundActive("business-template-meet-our-team")}}>
                     <h3 onClick={handleTextActive} id="business-team">MEET OUR TEAM</h3>
                     <div className="business-template-team-images">
                         <div className="business-template-team-image">
@@ -90,7 +91,7 @@ const BusinessTemplate = () => {
                         </div>
                     </div>
                 </div>
-                <div className='business-reviews'>
+                <div className='business-reviews' id="business-reviews" onClick={ () => {setBackgroundActive("business-reviews")}}>
                     <div className="client-reviews">
                         <h4 onClick={handleTextActive} id="client-reviews">Listen to what our clients have to say</h4>
                         <h5 onClick={handleTextActive} id="client-reviews-about">At i-Biz, we work actively to optimize business processes for you to enable compliance with effective regulatory frameworks</h5>
@@ -109,7 +110,7 @@ const BusinessTemplate = () => {
                         </div>
                     </div>
                 </div>
-                <div className='business-our-partners'>
+                <div className='business-our-partners' id="business-our-partners" onClick={ () => {setBackgroundActive("business-our-partners")}}>
                     <h4 onClick={handleTextActive} id="business-our-partners">Our Partners</h4>
                     <div className='business-our-partners-main'>
                         <div><img onClick={handleImageActive} id="partner-1-img" src={require("../../assets/images/paypal.png")} alt=""/></div>
@@ -119,16 +120,16 @@ const BusinessTemplate = () => {
                     </div>
                 </div>
                 <div>
-                <div className="business-stay-in-touch">
-                    <h4 onClick={handleTextActive} id="business-stay-in-touch">Stay in touch with our team</h4>
-                    <p onClick={handleTextActive} id="business-newsletter">Subscribe to our newsletter which will enable you make effective decisions for you business growth</p>
-                    <div>
-                        <input type="text" placeholder='Enter your email'/>
-                        <button onClick={handleButtonActive} id="business-subscribe">Subscribe</button>
+                    <div className="business-stay-in-touch" id="business-stay-in-touch" onClick={ () => {setBackgroundActive("business-stay-in-touch")}}>
+                        <h4 onClick={handleTextActive} id="business-stay-in-touch">Stay in touch with our team</h4>
+                        <p onClick={handleTextActive} id="business-newsletter">Subscribe to our newsletter which will enable you make effective decisions for you business growth</p>
+                        <div>
+                            <input type="text" placeholder='Enter your email'/>
+                            <button onClick={handleButtonActive} id="business-subscribe">Subscribe</button>
+                        </div>
                     </div>
                 </div>
-                </div>
-                <div className="business-footer">
+                <div className="business-footer" id="business-footer" onClick={ () => {setBackgroundActive("business-footer")}}>
                     <h5 onClick={handleTextActive} id="business-address-line-1">I-Biz</h5>
                     <p onClick={handleTextActive} id="business-address-line-2">Tesmot house, Abdulrahman Okene close, </p>
                     <p onClick={handleTextActive} id="business-address-line-3">Victoria Island, Lagos, Nigeria.</p>

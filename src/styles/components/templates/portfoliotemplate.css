@@ -162,8 +162,10 @@
     line-height: 58px;
     letter-spacing: 0.025em;
     text-align: center;
-    margin-top: 140px;
     color: #3B009A;
+}
+.my-portfolio{
+    padding-top: 140px;
 }
 .portfolio-footer{
     display: flex;

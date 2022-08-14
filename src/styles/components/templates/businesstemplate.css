@@ -183,7 +183,7 @@
 .business-reviews{
     display: flex;
     padding-top: 120px;
-    justify-content: space-between;
+    gap: 40px;
 }
 .client-reviews{
     background-color: #00112E;
@@ -300,7 +300,7 @@
     margin-top: 100px;
     background-color: #ffffff;
     padding: 92px 0;
-    margin-bottom: -100px;
+    margin-bottom: 50px;
 }
 .business-stay-in-touch h4{
     font-family: Inter;
@@ -381,4 +381,10 @@
     padding-bottom: 91px;
     justify-content: center;
     margin-top: 32px;
+}
+
+@media (min-width: 1400px) {
+    .business-reviews{
+        justify-content: space-between;
+    }
 }

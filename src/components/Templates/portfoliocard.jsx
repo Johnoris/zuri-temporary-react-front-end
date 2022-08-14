@@ -11,6 +11,7 @@ const PortfolioCard = () => {
     const [buttonActive, setButtonActive] = useState(false)
     const [socialActive, setsocialActive] = useState(false)
     const [activeID, setActiveID] = useState("")
+    const [backgroundActive , setBackgroundActive] = useState(true)
     const handleTextActive = (e) => {
         setTextActive(true)
         setImageActive(false)
@@ -41,12 +42,12 @@ const PortfolioCard = () => {
     }
     return(
         <>
-            {textActive && <TextCustomization active={activeID} textactive={textActive} settextactive={setTextActive}/>}
+            {textActive && <TextCustomization active={activeID} textactive={textActive} settextactive={setTextActive} backgroundactive={backgroundActive} setBackgroundactive={setBackgroundActive}/>}
             {imageActive && <ImageCustomization active={activeID} imageactive={imageActive} setimageactive={setImageActive}/>}
             {buttonActive && <ButtonCustomization active={activeID} buttonactive={buttonActive} setbuttonactive={setButtonActive}/>}
             {socialActive && <CustomizeIcons active={activeID} socialactive={socialActive} setsocialactive={setsocialActive}/>}
                 <TemplateNav/>
-            <div className="portfolio-card">
+            <div className="portfolio-card" id="portfolio-card-wrapper" onClick={() => {setBackgroundActive("portfolio-card-wrapper" )}}>
                 <div className="portfolio-card-header">
                     <h2 onClick={handleTextActive}id="portfolio-logo">ANNE</h2>
                     <div className="portfolio-card-nav">

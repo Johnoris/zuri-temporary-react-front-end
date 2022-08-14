@@ -11,6 +11,7 @@ const PortfolioTemplate = () => {
     const [buttonActive, setButtonActive] = useState(false)
     const [socialActive, setsocialActive] = useState(false)
     const [activeID, setActiveID] = useState("")
+    const [backgroundActive , setBackgroundActive] = useState(true)
     const handleTextActive = (e) => {
         setTextActive(true)
         setImageActive(false)
@@ -41,13 +42,13 @@ const PortfolioTemplate = () => {
     }
     return(
         <div>
-          {textActive && <TextCustomization active={activeID} textstate={textActive} settextstate={setTextActive}/>}
+          {textActive && <TextCustomization active={activeID} textstate={textActive} settextstate={setTextActive} backgroundactive={backgroundActive} setBackgroundactive={setBackgroundActive}/>}
           {imageActive && <ImageCustomization active={activeID} imageactive={imageActive} setimageactive={setImageActive}/>}
           {buttonActive && <ButtonCustomization active={activeID} buttonactive={buttonActive} setbuttonactive={setButtonActive}/>}
           {socialActive && <CustomizeIcons active={activeID}  socialactive={socialActive} setsocialactive={setsocialActive}/>}
           <TemplateNav/>
           <div className="portfolio-template-body">
-            <div className="portfolio-template-header">
+            <div className="portfolio-template-header" id="portfolio-template-top" onClick = { () => {setBackgroundActive("portfolio-template-top")}}>
                 <div className="portfolio-template-top">
                     <div>
                         <h2 id="portfolio-logo" onClick={handleTextActive}>ACE</h2>
@@ -72,7 +73,7 @@ const PortfolioTemplate = () => {
             </div>
             <div className="portfolio-section-wrapper">
                 <div className="my-portfolio">
-                    <h2>MY PORTFOLIO</h2>
+                    <h2 onClick={handleTextActive} id="my-portfolio-header">MY PORTFOLIO</h2>
                     <div className="portfolio-section">
                         <div className="span"><img onClick={handleImageActive} id="portfolio-img1" src={require("../../assets/images/portfolio-1.png")} alt=""/></div>
                         <div>
@@ -100,8 +101,10 @@ const PortfolioTemplate = () => {
                             <button id="button-5" onClick={handleButtonActive} className="portfolio-buttons">VIEW PROJECT</button>
                         </div>
                     </div>
-                    <div className="portfolio-footer">
-                        <h2 onClick={handleTextActive}>Do you have a project you want to do?</h2>
+                </div>
+                <div>
+                    <div className="portfolio-footer" id="portfolio-footer" onClick = { () => {setBackgroundActive("portfolio-footer")}}>
+                        <h2 onClick={handleTextActive} id="do-you-have-a-project">Do you have a project you want to do?</h2>
                         <p onClick={handleTextActive} id="portfolio-call-me-on">Contact me on</p>
                         <div className="portfolio-icons" onClick={handleSocialActive}>
                             <a id="facebook-icon"><img  src={require("../../assets/images/white-facebook-icon.png")} href="https://www.facebook.com" alt=""/></a>
@@ -114,8 +117,8 @@ const PortfolioTemplate = () => {
                             <p onClick={handleTextActive} id="portfolio-contact"> 08100959095, 09077733833</p>
                         </div>
                     </div>
-                    <div className="bottom"></div>
                 </div>
+                <div className="bottom" id="portfolio-bottom" onClick = { () => {setBackgroundActive("portfolio-bottom")}}></div>
             </div>
           </div>  
         </div>

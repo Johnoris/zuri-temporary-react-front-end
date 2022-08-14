@@ -34,7 +34,7 @@ const ButtonCustomization = (props) => {
             <h4 onClick={handleSwitch} id="switch-sides" >switch sides</h4>
             <div>
                 <h4>Button Text</h4>
-                <input type="text" className="contact-me" onChange={handleValue} defaultValue="CONTACT ME"/>
+                <input type="text" className="contact-me" onChange={handleValue} placeholder="Type something..."/>
                 <p>URL Link  (where do you want this button to direct your users to?)</p>
                 <input className="href" type="text" onChange={handleHref} defaultValue="http://asdfghjkk@gmail.com"/>
                 <div>

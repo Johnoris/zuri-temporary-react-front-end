@@ -8,7 +8,7 @@ const TextCustomization = (props) => {
     }
     const handleClose = () => {
         document.getElementById("customize-text-bar").style.display = "none"
-        props.settextactive(false)
+        props.settextstate(false)
     }
     const handleTextAlignCenter = () => {
         document.getElementById(props.active).style.textAlign = "center"
@@ -72,6 +72,10 @@ const TextCustomization = (props) => {
             document.getElementById("customize-text-bar").style.left = "17px";
         }
     }
+    const handleBackgroundColor = (e) => {
+        document.getElementById(props.backgroundactive).style.backgroundColor = e.target.value;
+        console.log(props.backgroundactive)
+    }
 
     return(
         <div className="customize-text" id="customize-text-bar">
@@ -82,7 +86,7 @@ const TextCustomization = (props) => {
             <h4 id="switch-sides" onClick={handleSwitch}>switch sides</h4>
             <button onClick={handleTextChange} >Add Text</button>
             <div>
-                <textarea className="customize-text-change" defaultValue={""}></textarea>
+                <textarea className="customize-text-change" placeholder="Type your text here..." defaultValue={""}></textarea>
             </div>
             <div className="text-align">
                 <img onClick={handleTextAlignLeft} src={require("../../assets/images/dark-text-align-left-icon.png")} alt=""/>
@@ -96,6 +100,7 @@ const TextCustomization = (props) => {
                 <h4>Text</h4>
                 <div>
                     <select className="font-weight" onChange={handleFontWeight}>
+                        <option>font-weight</option>
                         <option value="regular">Regular</option>
                         <option value="semibold">Semi Bold</option>
                         <option value="bold">Bold </option>
@@ -104,6 +109,7 @@ const TextCustomization = (props) => {
                         <option value="black">Black</option>
                     </select>
                     <select className="font-size" onChange={handleFontSize}>
+                        <option>font-size</option>
                         <option value="8px">8</option>
                         <option value="12px">12</option>
                         <option value="16px">16</option>
@@ -117,6 +123,7 @@ const TextCustomization = (props) => {
                         <option value="80px">80</option>
                     </select>
                     <select className="font-style" onChange={handleFontFamily}>
+                        <option>font-style</option>
                         <option value="open sans">Open Sans</option>
                         <option value="arial">Arial</option>
                         <option value="arial black">Arial Black</option>
@@ -127,6 +134,7 @@ const TextCustomization = (props) => {
                         <option value="gill sans">Gill Sans</option>
                     </select>
                     <select className="text-transform" onChange={handleTextTransform}>
+                        <option>font case</option>
                         <option value="uppercase">UPPER CASE</option>
                         <option value="lowercase">lower case</option>
                         <option value="capitalize">Title Case</option>
@@ -138,6 +146,10 @@ const TextCustomization = (props) => {
                     <h6>or input color hex code:</h6>
                     <input onChange={handleTextColorChange} type="text" className="colour-code"/>
                 </div>
+            </div>
+            <div className="d-flex">
+                <h4>Edit Background Color:</h4>
+                <input type="color" onChange={handleBackgroundColor}/>
             </div>
             <button onClick={handleClose} className="preview">Preview</button>
         </div>
