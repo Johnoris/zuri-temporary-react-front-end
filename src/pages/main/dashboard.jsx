@@ -10,7 +10,7 @@ const Dashboard = () => {
   useEffect(() => {
     console.log(location);
     if (location.state) setName(location.state.userDetails.fullname);
-  }, []);
+  }, [location]);
 
   return (
     <div className="dashboard">

@@ -107,10 +107,10 @@ const PortfolioTemplate = () => {
                         <h2 onClick={handleTextActive} id="do-you-have-a-project">Do you have a project you want to do?</h2>
                         <p onClick={handleTextActive} id="portfolio-call-me-on">Contact me on</p>
                         <div className="portfolio-icons" onClick={handleSocialActive}>
-                            <a id="facebook-icon"><img  src={require("../../assets/images/white-facebook-icon.png")} href="https://www.facebook.com" alt=""/></a>
-                            <a id="instagram-icon"><img  src={require("../../assets/images/white-instagram-icon.png")} alt=""/></a>
-                            <a  id="twitter-icon"><img src={require("../../assets/images/white-twitter-icon.png")} alt=""/></a>
-                            <a id="linkedin-icon" ><img src={require("../../assets/images/white-linkedin-icon.png")} alt=""/></a>
+                            <a id="facebook-icon" href="facebook.com"><img  src={require("../../assets/images/white-facebook-icon.png")} href="https://www.facebook.com" alt=""/></a>
+                            <a id="instagram-icon" href="instagram.com"><img  src={require("../../assets/images/white-instagram-icon.png")} alt=""/></a>
+                            <a  id="twitter-icon" href="twitter.com"><img src={require("../../assets/images/white-twitter-icon.png")} alt=""/></a>
+                            <a id="linkedin-icon" href="linkedin.com" alt=""><img src={require("../../assets/images/white-linkedin-icon.png")} alt=""/></a>
                         </div>
                         <p onClick={handleTextActive} id="portfolio-or-call">Or call</p>
                         <div className="portfolio-contact">

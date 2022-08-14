@@ -12,7 +12,7 @@ import VerifySuccess from "../pages/auth/verifysuccess";
 import Template from "../pages/main/template";
 import Dashboard from "../pages/main/dashboard";
 import DesignPage from "../pages/main/designspage";
-// import PortfolioTemplate from "../components/Templates/portfoliotemplate";
+import PortfolioTemplate from "../components/Templates/portfoliotemplate";
 import PortfolioCard from "../components/Templates/portfoliocard";
 import BusinessTemplate from "../components/Templates/businesstemplate";
 
@@ -27,7 +27,7 @@ const Router = () => {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/design" element={<DesignPage/>}/>
         {/* templates */}
-        {/* <Route path="/dashboard/portfolio-template" element={<PortfolioTemplate/>} /> */}
+        <Route path="/dashboard/portfolio-template" element={<PortfolioTemplate/>} />
         <Route path="/dashboard/portfolio-card-template" element={<PortfolioCard/>} />
         <Route path="/dashboard/business-template" element={<BusinessTemplate/>} />
         {/* auth */}
