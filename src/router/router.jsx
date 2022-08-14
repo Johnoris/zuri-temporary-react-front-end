@@ -8,7 +8,7 @@ import Login from "../pages/auth/login";
 import PasswordResetCode from "../pages/auth/passwordresetcode";
 import LandingPage from "../pages/main/landingpage";
 import AccountVerify from "../pages/auth/accountverify";
-import VerifySuccess from "../pages/auth/verifysuccess";\
+import VerifySuccess from "../pages/auth/verifysuccess";
 import PortfolioTemplate from "../components/templates/portfoliotemplate";
 import PortfolioCard from "../components/templates/portfoliocard";
 import BusinessTemplate from "../components/templates/businesstemplate";
