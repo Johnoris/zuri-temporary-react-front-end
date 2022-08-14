@@ -293,10 +293,7 @@
   order: 3;
   flex-grow: 0;
 }
-.login-page .login-button a {
-  width: 44px;
-  height: 32px;
-
+.login-page .login-button p{
   /* Body Text/Body Text-Semi Bold */
 
   font-family: "Inter";
@@ -316,6 +313,7 @@
   flex: none;
   order: 0;
   flex-grow: 0;
+  text-align: center;
 }
 .login-page .sign-up {
   /* Body Text/Body Text-Bold */
