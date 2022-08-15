@@ -21,15 +21,18 @@
 @import url('./components/templatecard.css');
 @import url('./components/needhelp.css');
 @import url('./components/dashboard-bar.css');
-/* templates */
-@import url('./components/templates/portfoliotemplate.css');
-@import url('./components/templates/temlate-nav.css');
-@import url('./components/templates/text-customization.css');
-@import url('./components/templates/imagecustomization.css');
-@import url('./components/templates/buttoncustomization.css');
-@import url('./components/templates/customizesocialicons.css');
-@import url('./components/templates/businesstemplate.css');
-@import url('./components/templates/portfoliocard.css');
+
+/*Templates*/
+@import url('./templates/businesstemplate.css');
+@import url('./templates/portfoliocardtemplate.css');
+@import url('./templates/portfoliotemplate.css');
+
+/* templates customization*/
+@import url('./components/templates-customization/businesstemplate.css');
+@import url('./components/templates-customization/customizesocialicons.css');
+@import url('./components/templates-customization/imagecustomization.css');
+@import url('./components/templates-customization/temlate-nav.css');
+@import url('./components/templates-customization/text-customization.css');
 
 /* font-styles */
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
