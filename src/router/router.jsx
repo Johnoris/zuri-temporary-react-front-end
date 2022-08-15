@@ -12,9 +12,9 @@ import VerifySuccess from "../pages/auth/verifysuccess";
 import Template from "../pages/main/template";
 import Dashboard from "../pages/main/dashboard";
 import DesignPage from "../pages/main/designspage";
-import PortfolioTemplate from "../components/templates/portfoliotemplate";
-import PortfolioCard from "../components/templates/portfoliocard";
-import BusinessTemplate from "../components/templates/businesstemplate";
+import PortfolioTemplate from "../components/templates/PortfolioTemplate";
+import PortfolioCard from "../components/templates/PortfolioCardTemplate";
+import BusinessTemplate from "../components/templates/BusinessTemplate";
 
 const Router = () => {
   return (
