@@ -12,9 +12,6 @@ import VerifySuccess from "../pages/auth/verifysuccess";
 import Template from "../pages/main/template";
 import Dashboard from "../pages/main/dashboard";
 import DesignPage from "../pages/main/designspage";
-import PortfolioTemplate from "../components/templates/PortfolioTemplate";
-import PortfolioCard from "../components/templates/PortfolioCardTemplate";
-import BusinessTemplate from "../components/templates/BusinessTemplate";
 
 const Router = () => {
   return (
@@ -26,10 +23,6 @@ const Router = () => {
         <Route path="/templates" element={<Template />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/design" element={<DesignPage/>}/>
-        {/*Templates*/}
-        <Route path="/dashboard/portfolio-template" element={<PortfolioTemplate/>} />
-        <Route path="/dashboard/portfolio-card-template" element={<PortfolioCard/>} />
-        <Route path="/dashboard/business-template" element={<BusinessTemplate/>} />
         {/* auth */}
         <Route path="/account-verify" element={<AccountVerify/>}/>
         <Route path="/verify-success" element={<VerifySuccess/>}/>
