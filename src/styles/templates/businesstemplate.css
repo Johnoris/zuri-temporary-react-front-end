@@ -70,7 +70,7 @@
     color: #00112E;
 }
 .business-template-top{
-    background: linear-gradient(180deg, #EDEBEB 31.39%, rgba(237, 235, 235, 0) 95.95%),url("../../../assets/images/business-template-background.png");
+    background: linear-gradient(180deg, #EDEBEB 31.39%, rgba(237, 235, 235, 0) 95.95%),url("../../assets/images/business-template-background.png");
     padding-top: 276px;
     width: 100%;
     display: flex;

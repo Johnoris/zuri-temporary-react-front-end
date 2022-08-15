@@ -1,9 +1,9 @@
 import { useState } from "react";
-import ButtonCustomization from "./buttoncustomization";
-import CustomizeIcons from "./customizesocialicons";
-import ImageCustomization from "./imagecustomization";
-import TemplateNav from "./template-nav";
-import TextCustomization from "./text-customization";
+import ButtonCustomization from "../components/templates-customization/buttoncustomization";
+import CustomizeIcons from "../components/templates-customization//customizesocialicons";
+import ImageCustomization from "../components/templates-customization//imagecustomization";
+import TemplateNav from "../components/templates-customization//template-nav";
+import TextCustomization from "../components/templates-customization//text-customization";
 
 const BusinessTemplate = () => {
     const [textActive, setTextActive] = useState(false)
@@ -69,23 +69,23 @@ const BusinessTemplate = () => {
                         <h5 onClick={handleTextActive} id="business-who-are-we-text">Your Business Platform for Performance-Driven and Effective Partner for the Growth you Desire</h5>
                         <h6 onClick={handleTextActive} id="business-what-we-do">I-Biz provides a complete software for managing all aspects of your business and delivering exceptional results.</h6>
                     </div>
-                    <div id="business-template-logo-1-wrapper"><img id="business-template-logo-1" onClick={handleImageActive} src={require('../../assets/images/business-template-about-img.png')} alt=""/></div>
+                    <div id="business-template-logo-1-wrapper"><img id="business-template-logo-1" onClick={handleImageActive} src={require('../assets/images/business-template-about-img.png')} alt=""/></div>
                 </div>
                 <div className='business-template-meet-our-team' id="business-template-meet-our-team" onClick={ () => {setBackgroundActive("business-template-meet-our-team")}}>
                     <h3 onClick={handleTextActive} id="business-team">MEET OUR TEAM</h3>
                     <div className="business-template-team-images">
                         <div className="business-template-team-image">
-                            <div className="business-meet-our-team"><img onClick={handleImageActive} id="team-member-1" src={require('../../assets/images/team-member-1.png')} alt=""/></div> 
+                            <div className="business-meet-our-team"><img onClick={handleImageActive} id="team-member-1" src={require('../assets/images/team-member-1.png')} alt=""/></div> 
                             <h5 onClick={handleTextActive} id="team-member-1-name">JOHN JOSH</h5>
                             <h6 onClick={handleTextActive} id="team-member-1-position">Project Manager</h6>
                         </div>
                         <div className="business-template-team-image">
-                            <div className="business-meet-our-team"><img onClick={handleImageActive} id="team-member-2" src={require('../../assets/images/team-member-2.png')} alt=""/></div>        
+                            <div className="business-meet-our-team"><img onClick={handleImageActive} id="team-member-2" src={require('../assets/images/team-member-2.png')} alt=""/></div>        
                             <h5 onClick={handleTextActive} id="team-member-2-name">MARY ANN</h5>
                             <h6 onClick={handleTextActive} id="team-member-2-position">Sales Team Lead</h6>
                         </div>
                         <div className="business-template-team-image">
-                            <div className="business-meet-our-team"><img onClick={handleImageActive} id="team-member-3" src={require('../../assets/images/team-member-3.png')} alt=""/></div>
+                            <div className="business-meet-our-team"><img onClick={handleImageActive} id="team-member-3" src={require('../assets/images/team-member-3.png')} alt=""/></div>
                             <h5 onClick={handleTextActive} id="team-member-3-name" >CHARLSE JOB</h5>
                             <h6 onClick={handleTextActive} id="team-member-3-position">Chief Operation Officer</h6>
                         </div>
@@ -99,12 +99,12 @@ const BusinessTemplate = () => {
                     </div>
                     <div className="clients">
                         <div className="client">
-                            <span><img onClick={handleImageActive} id="client-1-img" src={require('../../assets/images/review-1.png')} alt=""/></span>
+                            <span><img onClick={handleImageActive} id="client-1-img" src={require('../assets/images/review-1.png')} alt=""/></span>
                             <h6 onClick={handleTextActive} id="client-1-name">Ayobami Israel</h6>
                             <p onClick={handleTextActive} id="client-1-description">Lörem ipsum virat tessa tetrare, jag pseudosa respektive renovräkning, även om intrabel dis selfie, föde diling. Heterodining krortad plas plal: plaktig. virat tessa tetrare, jag pseudosa respektive renovräkning, även om intrabel dis selfie, föde diling. Heterodining krortad plas plal: plaktig.</p>
                         </div>
                         <div className="client">
-                            <span><img onClick={handleImageActive} id="client-2-img" src={require('../../assets/images/review-2.png')} alt=""/></span>
+                            <span><img onClick={handleImageActive} id="client-2-img" src={require('../assets/images/review-2.png')} alt=""/></span>
                             <h6 onClick={handleTextActive} id="client-2-name">Joy Israel</h6>
                             <p onClick={handleTextActive} id="client-2-description">Lörem ipsum virat tessa tetrare, jag pseudosa respektive renovräkning, även om intrabel dis selfie, föde diling. Heterodining krortad plas plal: plaktig. virat tessa tetrare, jag pseudosa respektive renovräkning, även om intrabel dis selfie, föde diling. Heterodining krortad plas plal: plaktig.</p>
                         </div>
@@ -113,10 +113,10 @@ const BusinessTemplate = () => {
                 <div className='business-our-partners' id="business-our-partners" onClick={ () => {setBackgroundActive("business-our-partners")}}>
                     <h4 onClick={handleTextActive} id="business-our-partners">Our Partners</h4>
                     <div className='business-our-partners-main'>
-                        <div><img onClick={handleImageActive} id="partner-1-img" src={require("../../assets/images/paypal.png")} alt=""/></div>
-                        <div><img onClick={handleImageActive} id="partner-2-img" src={require("../../assets/images/aws.png")} alt=""/></div>
-                        <div><img onClick={handleImageActive} id="partner-3-img" src={require("../../assets/images/linkedin.png")} alt=""/></div>
-                        <div><img onClick={handleImageActive} id="partner-4-img" src={require("../../assets/images/interswitch.png")} alt=""/></div>
+                        <div><img onClick={handleImageActive} id="partner-1-img" src={require("../assets/images/paypal.png")} alt=""/></div>
+                        <div><img onClick={handleImageActive} id="partner-2-img" src={require("../assets/images/aws.png")} alt=""/></div>
+                        <div><img onClick={handleImageActive} id="partner-3-img" src={require("../assets/images/linkedin.png")} alt=""/></div>
+                        <div><img onClick={handleImageActive} id="partner-4-img" src={require("../assets/images/interswitch.png")} alt=""/></div>
                     </div>
                 </div>
                 <div>
@@ -136,10 +136,10 @@ const BusinessTemplate = () => {
                     <p onClick={handleTextActive} id="business-contact">contact@piggyvest.com</p>
                     <p onClick={handleTextActive}  id="business-number">+234 700 933 933 933</p>
                     <div>
-                        <span><img onClick={handleSocialActive} id="facebook-icon" src={require("../../assets/images/white-facebook-icon.png")} alt=""/></span>
-                        <span><img onClick={handleSocialActive} id="instagram-icon" src={require("../../assets/images/white-instagram-icon.png")} alt=""/></span>
-                        <span><img onClick={handleSocialActive} id="twitter-icon" src={require("../../assets/images/white-twitter-icon.png")} alt=""/></span>
-                        <span><img onClick={handleSocialActive} id="linkedin-icon" src={require("../../assets/images/white-linkedin-icon.png")} alt=""/></span>
+                        <span><img onClick={handleSocialActive} id="facebook-icon" src={require("../assets/images/white-facebook-icon.png")} alt=""/></span>
+                        <span><img onClick={handleSocialActive} id="instagram-icon" src={require("../assets/images/white-instagram-icon.png")} alt=""/></span>
+                        <span><img onClick={handleSocialActive} id="twitter-icon" src={require("../assets/images/white-twitter-icon.png")} alt=""/></span>
+                        <span><img onClick={handleSocialActive} id="linkedin-icon" src={require("../assets/images/white-linkedin-icon.png")} alt=""/></span>
                     </div>
                 </div>
             </div>

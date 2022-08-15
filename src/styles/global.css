@@ -28,7 +28,7 @@
 @import url('./templates/portfoliotemplate.css');
 
 /* templates customization*/
-@import url('./components/templates-customization/businesstemplate.css');
+@import url('./components/templates-customization/buttoncustomization.css');
 @import url('./components/templates-customization/customizesocialicons.css');
 @import url('./components/templates-customization/imagecustomization.css');
 @import url('./components/templates-customization/temlate-nav.css');
