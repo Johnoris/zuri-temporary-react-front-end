@@ -26,6 +26,7 @@ const Router = () => {
         <Route path="/templates" element={<Template />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/design" element={<DesignPage/>}/>
+        {/*Templates*/}
         <Route path="/dashboard/portfolio-template" element={<PortfolioTemplate/>} />
         <Route path="/dashboard/portfolio-card-template" element={<PortfolioCard/>} />
         <Route path="/dashboard/business-template" element={<BusinessTemplate/>} />
@@ -38,7 +39,6 @@ const Router = () => {
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/login" element={<Login />} />
         <Route path="/password-reset-code" element={<PasswordResetCode />} />
-
       </Routes>
     </BrowserRouter>
   );
