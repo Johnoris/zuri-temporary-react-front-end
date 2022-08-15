@@ -94,6 +94,7 @@
     gap: 50px;
     padding: 0 185px;
     margin-top: 120px;
+    justify-content: space-between;
 }
 .portfolio-section h3{
     font-family: Inter;
@@ -211,8 +212,47 @@
     margin-top: 120px;
     height: 271px;
 }
+@media (max-width: 1340px) {
+    .portfolio-section{
+        padding: 0 70px;
+    }
+    .portfolio-template-header{
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+}
 @media (max-width: 1222px) {
  .portfolio-template-main-text{
     margin-bottom: 40px;
  }   
+ .portfolio-footer{
+    width: 90%;
+    padding-bottom: 40px;
+ }
+}
+@media (max-width: 1110px) {
+    .portfolio-section{
+        flex-direction: column;
+    }
+    .flip{
+        flex-direction: column-reverse !important;
+    }
+    
+}
+@media (max-width: 700px) {
+    .portfolio-template-links{
+        display: none;
+    }
+}
+@media (max-width: 500px) {
+    .portfolio-template-header{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .portfolio-section .span{
+        width: 100%;
+    }
+    .portfolio-section{
+        padding: 0 30px;
+    }
 }

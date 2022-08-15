@@ -382,9 +382,63 @@
     justify-content: center;
     margin-top: 32px;
 }
+.d-flexno-gap{
+    display: flex;
+}
 
 @media (min-width: 1400px) {
     .business-reviews{
         justify-content: space-between;
+    }
+}
+@media (max-width: 1200px) {
+    .business-template-about{
+        flex-direction: column;
+        align-items: center;
+    }
+    .business-template-about img{
+        margin-top: 40px;
+    }
+}
+@media (max-width: 840px) {
+    .business-template-nav-links{
+        display: none;
+    }
+    .business-template-team-images{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 730px) {
+    .business-reviews{
+        flex-direction: column;
+        align-items: center;
+    }
+    .client{
+        max-width: 90%;
+    }
+    .clients{
+        align-items: center;
+    }
+    .business-our-partners-main{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 550px ) {
+    .business-template-about{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .client-reviews{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .d-flexno-gap{
+        flex-direction: column;
+        align-items: center;
+    }
+    .d-flexno-gap button{
+        border-radius: 20px;
+        margin-top: 40px;
     }
 }

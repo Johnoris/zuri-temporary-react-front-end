@@ -114,3 +114,38 @@
     text-align: center;
     color: #383838;
 }
+@media (max-width: 1200px){
+    .portfolio-card-main-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .portfolio-card-img{
+        margin-top: 30px;
+    }
+}
+@media (max-width: 910px) {
+    .portfolio-card-nav{
+        display: none;
+    }
+}
+@media (max-width: 700px) {
+    .portfolio-card{
+        padding-left: 20px;
+        padding-right: 0;
+    }
+    .send-message{
+        width: 80%;
+    }
+    .portfolio-card-icons{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 400px) {
+    .portfolio-card-img{
+        padding-right: 10px;
+    }
+    .portfolio-card-img img{
+        max-height: 100%;
+        height: auto;
+    }
+}

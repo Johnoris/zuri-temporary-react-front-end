@@ -123,7 +123,7 @@ const BusinessTemplate = () => {
                     <div className="business-stay-in-touch" id="business-stay-in-touch" onClick={ () => {setBackgroundActive("business-stay-in-touch")}}>
                         <h4 onClick={handleTextActive} id="business-stay-in-touch">Stay in touch with our team</h4>
                         <p onClick={handleTextActive} id="business-newsletter">Subscribe to our newsletter which will enable you make effective decisions for you business growth</p>
-                        <div>
+                        <div className="d-flexno-gap">
                             <input type="text" placeholder='Enter your email'/>
                             <button onClick={handleButtonActive} id="business-subscribe">Subscribe</button>
                         </div>

@@ -84,7 +84,7 @@ const PortfolioTemplate = () => {
                             <button id="button-3" onClick={handleButtonActive} className="portfolio-buttons">VIEW PROJECT</button>
                         </div>
                     </div>
-                    <div className="portfolio-section">
+                    <div className="portfolio-section flip">
                         <div>
                             <h3 onClick={handleTextActive} id="portfolio-section-2-h3">AREA E-MARKET CASE STUDY</h3>
                             <h4 onClick={handleTextActive} id="portfolio-section-2-h4">PROJECT SUMMARY</h4>

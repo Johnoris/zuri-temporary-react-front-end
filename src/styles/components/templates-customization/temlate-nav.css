@@ -5,8 +5,7 @@
     justify-content: flex-end;
     gap: 24px;
     background-color: #2D001B;
-    padding: 16px 0;
-    padding-right: 26px;
+    padding: 16px 10px;
 }
 .template-nav button{
     width: 153px;
@@ -25,4 +24,9 @@
 .template-nav .publish-btn{
     background-color: #E20088;
     color: #ffffff;
+}
+@media (max-width: 400px) {
+    .template-nav{
+        justify-content: center;
+    }
 }
